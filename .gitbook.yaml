@@ -1,4 +1,4 @@
 root: ./
 
 redirects:
-  the-iotex-stack/basic-concepts/address-conversion.md: builders/reference-docs/native-iotex-development/address-conversion.md
+  the-iotex-stack/basic-concepts/address-conversion: builders/reference-docs/native-iotex-development/address-conversion.md
