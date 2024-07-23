@@ -3,7 +3,7 @@
 The IoTeX blockchain supports two distinct address formats: the IoTeX "native" format (addresses that start with "`io1...`") and the Ethereum-compatible format (starting with "`0x`". This page provides an overview of these formats, their purposes, and links to relevant documentation for developers and tools for conversion.
 
 {% hint style="success" %}
-[-> Go to the IoTeX Address converter](https://iotexscan.io/address-convert)
+[⇒ Go to the IoTeX Address converter](https://iotexscan.io/address-convert)
 {% endhint %}
 
 ## IoTeX "Native" `io` Address Format
@@ -26,7 +26,7 @@ IoTeX also supports Ethereum-compatible addresses that start with "`0x`". These 
 
 To facilitate seamless interaction between these two formats, IoTeX provides tools and commands to convert addresses:
 
-* **IoTeX Address Converter Tool**: This online tool allows users to easily convert between IoTeX native and Ethereum-compatible addresses. [-> IoTeX Address Converter](https://iotexscan.io/address-convert)
+* **IoTeX Address Converter Tool**: This online tool allows users to easily convert between IoTeX native and Ethereum-compatible addresses. [⇒ IoTeX Address Converter](https://iotexscan.io/address-convert)
 *   **ioctl CLI Command**: The `ioctl` command-line client includes a command to convert addresses. This is particularly useful for developers who prefer working in a terminal environment. To convert an address using `ioctl`, use the following command:
 
     ```css
