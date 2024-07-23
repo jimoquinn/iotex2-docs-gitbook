@@ -190,6 +190,7 @@
   * [Native IoTeX Development](builders/reference-docs/native-iotex-development/README.md)
     * [IoTeX gRPC API](builders/reference-docs/native-iotex-development/iotex-grpc-api.md)
     * [Account Cryptography](builders/reference-docs/native-iotex-development/account-cryptography.md)
+    * [Address Conversion](builders/reference-docs/native-iotex-development/address-conversion.md)
     * [Create Accounts](builders/reference-docs/native-iotex-development/create-accounts.md)
     * [Estimate Gas Price](builders/reference-docs/native-iotex-development/estimate-gas-price.md)
     * [Make IOTX Transfers](builders/reference-docs/native-iotex-development/make-iotx-transfers.md)
