@@ -1,0 +1,2 @@
+# Register a DePIN Project
+
