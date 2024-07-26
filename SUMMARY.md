@@ -146,7 +146,7 @@
     * [Components of AA](builders/web3-development/account-abstraction/components-of-aa.md)
     * [👩‍💻 Creating new Accounts](builders/web3-development/account-abstraction/creating-new-accounts.md)
     * [👨‍💻 P256Account Example](builders/web3-development/account-abstraction/p256account-example.md)
-* [DePIN](builders/depin/README.md)
+* [Building DePINs](builders/depin/README.md)
   * [End-to-End DeWi Demo](builders/depin/end-to-end-dewi-demo/README.md)
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
     * [The choice of Hardware](builders/depin/end-to-end-dewi-demo/the-choice-of-hardware.md)
