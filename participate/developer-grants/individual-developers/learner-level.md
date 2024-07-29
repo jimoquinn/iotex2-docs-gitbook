@@ -2,22 +2,7 @@
 
 The IoTeX Learner Grant is the first tier of our Developer Grants, specifically designed for those who are new to the IoTeX ecosystem and eager to learn. This tier offers a supportive environment for developers to familiarize themselves with the IoTeX platform, expand their knowledge, and gain hands-on experience.
 
-The IoTeX Learner Grant focuses on providing resources such as test tokens, learning content, and access to our community of experienced developers. To complete this grant and get their SBT token, devs will have to pass a short live test with one of our team members.&#x20;
-
-{% hint style="info" %}
-**Does the word **_**"test"**_** sound scary to you?** 👻 \
-No worries, we're here to help you and give you all the resources necessary to succeed.
-
-Our test is a simple interview based on the following content:
-
-* Knowledge of IoTeX blockchain fundamentals**:** \
-  [**IoTeX Wallet**](https://docs.iotex.io/get-started/iotex-wallets)**,** [**Obtaining Test $IOTX Tokens**](https://docs.iotex.io/get-started/iotx-faucets)**,** [**Blockchain Specs**](https://docs.iotex.io/dapp-development/basic-concepts/blockchain-specs), and [**Web3 Development**](https://docs.iotex.io/dapp-development/web3-development)
-* What is W3bstream and its importance: \
-  [**Intro to W3bstream**](https://docs.w3bstream.com/introduction/readme), and [**W3bstream Basic Concepts**](https://docs.w3bstream.com/get-started/basic-concepts)
-* [**Deploying and Testing a W3bstream "Hello World" Applet**](https://docs.w3bstream.com/get-started/deploying-an-applet)
-
-
-{% endhint %}
+The IoTeX Learner Grant focuses on providing resources such as test tokens, learning content, and access to our community of experienced developers. To complete this grant and get their SBT token, devs will have to complete the submission in the form below.&#x20;
 
 Below you'll also find a list of requirements and expectations we have of our applicants:&#x20;
 
