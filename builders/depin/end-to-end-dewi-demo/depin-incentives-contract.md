@@ -1,10 +1,10 @@
 # DePIN Incentives Contract
 
 {% hint style="info" %}
-This documentation is being updated.
+This documentation is work in progress.
 {% endhint %}
 
-Welcome back to our series on building a Decentralized WiFi network. In previous tutorials, we covered how to create the device firmware and how to write and deploy the W3bstream prover logic. In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of devices in a DePIN network.
+In previous tutorials, we covered how to create the device firmware and how to write and deploy the W3bstream prover logic. In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of devices in a DePIN network.
 
 ## **Assumptions**
 
