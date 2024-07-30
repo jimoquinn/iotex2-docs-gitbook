@@ -150,6 +150,7 @@
   * [End-to-End DeWi Demo](builders/depin/end-to-end-dewi-demo/README.md)
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
     * [The choice of Hardware](builders/depin/end-to-end-dewi-demo/the-choice-of-hardware.md)
+    * [DePIN Incentives Contract](builders/depin/end-to-end-dewi-demo/depin-incentives-contract.md)
 * [DeFi](builders/defi/README.md)
   * [Deploy Tokens](builders/defi/deploy-tokens/README.md)
     * [Deploy an ERC20 Token](builders/defi/deploy-tokens/deploy-an-erc20-token.md)
