@@ -20,101 +20,114 @@ In previous tutorials, we covered how to create the device firmware and how to w
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-// We must interact with the Risc0 verifier contract on IoTeX to verify
-//  the proof that rewards computation was performed by our logic. 
+// Importing the Risc0 verifier contract interface to verify ZK proofs.
 import {IRiscZeroVerifier} from "./IRiscZeroVerifier.sol";
 
+// Importing the JournalParser library to decode reward data from the W3bstream output.
 // We use this utility library to parse the Risc0 journal containing an object
 // where each name is a device id and each value is the reward. E.g.:
 // {"0":45,"3":24,"2":53,"1":62}. 
 // Refer to https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib
 import "./lib/JournalParser.sol";
 
+// Importing the ERC721 interface to interact with the tokenized devices.
 // We must interact with our tokenized devices to find their ioID identity.
 // In fact, we assume that the W3bstream output returns a custom device id
-// and not it's DID, for gas efficiency reason.
+// and not its DID, for gas efficiency reasons.
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
+// Importing the ioID registry interface to look up device identities.
 // We must interact with the ioID registry to find out the ioID identity 
-// assocciated to a given device NFT
+// associated to a given device NFT.
 import "./interfaces/IioIDRegistry.sol";
 
-// We must interact with the ioID contract to look up device owner accounts
+// Importing the ioID contract interface to find device owners.
+// We must interact with the ioID contract to look up device owner accounts.
 import "./interfaces/IioID.sol";
 
-// We need to interact with our ERC20 token and distribute the incentives
+// Importing the ERC20 interface to distribute rewards in the form of tokens.
+// We need to interact with our ERC20 token and distribute the incentives.
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-// Let's make our contract ownable
+// Importing the Ownable contract to manage ownership and administrative functions.
+// Let's make our contract ownable.
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract DePINDappContract is Ownable {
-    // This will hold the reference to the Risc0 Verifier contract
+    // This will hold the reference to the Risc0 Verifier contract.
     IRiscZeroVerifier private verifier;
-    // This will hold the reference to the ioID NFT identity contract
+    // This will hold the reference to the ioID NFT identity contract.
     IioID public ioID;
-    // This will hold the reference to the ioID registry contract
+    // This will hold the reference to the ioID registry contract.
     IioIDRegistry public ioIDRegistry;
-    // This will hold the reference to our DePIN token to distribute rewards
+    // This will hold the reference to our DePIN token to distribute rewards.
     IERC20 private token;
-    
-    
+
+    // Event emitted when a proof is successfully verified.
     event ProofVerified(address sender, bytes32 imageId, bytes32 postStateDigest);
+    // Event emitted when rewards are distributed.
     event RewardsDistributed(address receiver, uint256 amount);
-    
-    constructor(address _verifierAddress, address _tokenAddress, address ioIDAddress,
-      address _ioIDRegistryAddress) {
+
+    // Constructor to initialize the contract with the necessary addresses.
+    constructor(
+        address _verifierAddress,
+        address _tokenAddress,
+        address _ioIDAddress,
+        address _ioIDRegistryAddress
+    ) {
         verifier = IRiscZeroVerifier(_verifierAddress);
         ioID = IioID(_ioIDAddress);
         ioIDRegistry = IioIDRegistry(_ioIDRegistryAddress);
         token = IERC20(_tokenAddress);
     }
-    
+
+    // Function to verify the ZK proof and distribute rewards based on the journal data.
     function verifyAndExecute(
         bytes calldata seal,
         bytes32 imageId,
         bytes32 postStateDigest,
         bytes memory journal
     ) external {
-        // First verify the W3bstream proof
+        // Verify the ZK proof using the Risc0 verifier contract.
         require(verifier.verifySnark(seal, imageId, postStateDigest, journal), "Proof verification failed.");
         emit ProofVerified(msg.sender, imageId, postStateDigest);
-        // NExt, extract the deviceID-rewards mapping from the computation output
-        address[] memory recipients = _decodeJournal(journal);
-        // start the rewards distribution
-        _distributeRewards(recipients);
+
+        // Decode the deviceID-rewards mapping from the journal data.
+        // (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(journal);
+        // JournalParser provides an example implementation of how to parse the journal
+        // Refer to https://github.com/machinefi/iotex-dewi-demo/blob/main/blockchain/contracts/lib/JournalParser.sol
+        (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(journal);
+
+        // Distribute rewards to the owners of the devices.
+        _distributeRewards(devices, devicesLen);
     }
-    
-    function _distributeRewards(address[] memory recipients) internal {
-        // Assuming reward is 1 token, with 18 decimals
-        uint256 rewardAmount = 1 * 10 ** 18; 
-        
-        for (uint256 i = 0; i < recipients.length; i++) {
-            require(token.transfer(recipients[i], rewardAmount), "Token transfer failed");
-            emit RewardsDistributed(recipients[i], rewardAmount);
+
+    // Internal function to distribute rewards to device owners.
+    function _distributeRewards(JournalParser.Device[] memory devices, uint256 devicesLen) internal {
+        for (uint256 i = 0; i < devicesLen; i++) {
+            uint256 deviceId = devices[i].id;
+
+            // Get the ioID token ID associated with the device ID.
+            uint256 ioIDTokenId = ioIDRegistry.deviceTokenId(deviceId);
+
+            // Get the owner of the ioID token ID.
+            address owner = ioID.ownerOf(ioIDTokenId);
+
+            // Transfer the reward amount to the device owner.
+            require(token.transfer(owner, devices[i].reward), "Token transfer failed");
+            emit RewardsDistributed(owner, devices[i].reward);
         }
     }
-    
-    function _decodeJournal(bytes memory journal) internal pure returns (address[] memory) {
-        // Assuming the journal contains addresses encoded as 20-byte sequences.
-        uint256 numRecipients = journal.length / 20;
-        address[] memory recipients = new address[](numRecipients);
-        for (uint256 i = 0; i < numRecipients; i++) {
-            address recipient;
-            assembly {
-                recipient := mload(add(add(journal, 20), mul(i, 20)))
-            }
-            recipients[i] = recipient;
-        }
-        return recipients;
-    }
-    
+
+    // Function to update the verifier contract address (only callable by the owner).
     function updateVerifierAddress(address newVerifierAddress) external onlyOwner {
         verifier = IRiscZeroVerifier(newVerifierAddress);
     }
-    
+
+    // Function to update the token contract address (only callable by the owner).
     function updateTokenAddress(address newTokenAddress) external onlyOwner {
         token = IERC20(newTokenAddress);
     }
 }
+
 ```
