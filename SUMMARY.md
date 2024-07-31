@@ -127,7 +127,7 @@
 
 ## Builders
 
-* [IoTeX Developer Portal](builders/iotex-developer-portal.md)
+* [IoTeX Developer Portal](https://developers.iotex.io)
 * [Web3 Development](builders/web3-development/README.md)
   * [RPC Endpoints](builders/web3-development/rpc-endpoints.md)
   * [Set up your Environment](builders/web3-development/set-up-your-environment.md)
@@ -152,7 +152,7 @@
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
     * [The choice of Hardware](builders/depin/end-to-end-dewi-demo/the-choice-of-hardware.md)
     * [DePIN Incentives Contract](builders/depin/end-to-end-dewi-demo/depin-incentives-contract.md)
-* [DeFi](builders/defi/README.md)
+* [Building DeFi](builders/defi/README.md)
   * [Deploy Tokens](builders/defi/deploy-tokens/README.md)
     * [Deploy an ERC20 Token](builders/defi/deploy-tokens/deploy-an-erc20-token.md)
     * [Deploy an NFT Token](builders/defi/deploy-tokens/deploy-an-nft-token.md)
