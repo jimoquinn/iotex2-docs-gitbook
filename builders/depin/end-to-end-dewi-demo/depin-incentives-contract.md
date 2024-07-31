@@ -4,21 +4,24 @@
 This documentation is work in progress.
 {% endhint %}
 
-In previous tutorials, we covered how to create the device firmware and how to write and deploy the W3bstream prover logic. In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of devices in a DePIN network.
+In previous tutorials, we covered how to create the device firmware for a WiFi access point for our demo DeWi infrastructure, and how to write and deploy the W3bstream prover logic to compute rewards generated per device.
+
+In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of of the WiFi routers in our network.
 
 ## **Assumptions**
 
-1. **Device Types:** The devices in this tutorial are WiFi access points.
-2. **Identity Registration:** Both the devices and their owners have their identities registered in the IoTeX [ioid-depin-identities](../../../depin-infra-modules-dim/ioid-depin-identities/ "mention")module.
-3. **Device Messages:** These devices send messages about their online status and the number of clients they have served. These messages are processed by a Risc0 ZK prover using W3bstream to determine the amount of rewards to be distributed per device.
-4. A DePIN ERC20 token to be used for incentivising device owners is already deployed.
-5. **Proof Verification and Reward Distribution:** The processed results and their ZK proofs are sent to our smart contract, which will verify the proof, lookup device owners in the ioID registry, and distribute the rewards as verifiably computed by W3bstream.
+1. **Device Tokenization:** a Device NFT contract for our WiFi routers has already been deployed on IoTeX. This contract tokenizes each device on-chain and the token ID represents our custom ID for the device (e.g.a serial nomber)
+2. **Identity Registration:** Both the devices and their owners have their identities registered in the IoTeX [ioID Identity Module](../../../depin-infra-modules-dim/ioid-depin-identities/).
+3. **Device Messages:** These devices send messages about their online status and the number of WiFi clients they have served. These messages have been processed by W3bstream using a Risc0 ZK prover to determine the amount of rewards accumulated by each device based on their activity.
+4. **A DePIN token** (ERC20) to be used for incentivising device owners is already deployed on IoTeX.
+
+The computation results and their ZK proofs are sent to our smart contract by W3bstream. Our contract below will verify the proof, lookup device owners in the ioID registry, and distribute the rewards as verifiably computed by W3bstream.
 
 ## The code
 
 **References**
 
-* [Build a W3bstream prover using Risc0](../../../depin-infra-modules-dim/w3bstream-depin-verification/build-with-w3bstream/build-the-prover-code/risc-zero.md):&#x20;
+* [Build a W3bstream prover using Risc0](../../../depin-infra-modules-dim/w3bstream-depin-verification/build-with-w3bstream/build-the-prover-code/risc-zero.md)
 * [Risc0 Verifier contract deployment on IoTeX Testnet](https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment)
 * [Risc0 Verifier source code](https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol)
 * [Library to parse the Journal output created by our DeWi prover](https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib)
