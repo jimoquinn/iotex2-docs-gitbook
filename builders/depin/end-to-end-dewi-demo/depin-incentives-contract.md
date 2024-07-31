@@ -16,6 +16,13 @@ In previous tutorials, we covered how to create the device firmware and how to w
 
 ## The code
 
+References:
+
+* Build a W3bstream prover using Risc0:&#x20;
+* Risc0 Verifier contract deployment on IoTeX Testnet: [https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment](https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment)
+* Risc0 Verifier source code: [https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol](https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol)
+* Library to parse the Journal output created by our prover: [https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib](https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib)
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
@@ -24,53 +31,51 @@ pragma solidity ^0.8.9;
 import {IRiscZeroVerifier} from "./IRiscZeroVerifier.sol";
 
 // Importing the JournalParser library to decode reward data from the W3bstream output.
-// We use this utility library to parse the Risc0 journal containing an object
-// where each name is a device id and each value is the reward. E.g.:
-// {"0":45,"3":24,"2":53,"1":62}. 
-// Refer to https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib
+// This library is used to parse the Risc0 journal, which contains a mapping
+// of device IDs to their respective rewards. For example: {"0":45,"3":24,"2":53,"1":62}.
 import "./lib/JournalParser.sol";
 
 // Importing the ERC721 interface to interact with the tokenized devices.
-// We must interact with our tokenized devices to find their ioID identity.
-// In fact, we assume that the W3bstream output returns a custom device id
-// and not its DID, for gas efficiency reasons.
+// The contract interacts with tokenized devices to find their ioID identities.
+// It is assumed that the W3bstream output returns a custom device ID instead
+// of the device DID, for gas efficiency.
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 // Importing the ioID registry interface to look up device identities.
-// We must interact with the ioID registry to find out the ioID identity 
-// associated to a given device NFT.
+// The contract uses the ioID registry to find the ioID identity associated with a given device NFT.
 import "./interfaces/IioIDRegistry.sol";
 
 // Importing the ioID contract interface to find device owners.
-// We must interact with the ioID contract to look up device owner accounts.
+// The contract interacts with the ioID contract to look up the owner accounts of devices.
 import "./interfaces/IioID.sol";
 
 // Importing the ERC20 interface to distribute rewards in the form of tokens.
-// We need to interact with our ERC20 token and distribute the incentives.
+// The contract uses an ERC20 token to distribute rewards to device owners.
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // Importing the Ownable contract to manage ownership and administrative functions.
-// Let's make our contract ownable.
+// The Ownable contract is used to restrict access to certain functions to the contract owner.
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract DePINDappContract is Ownable {
-    // This will hold the reference to the Risc0 Verifier contract.
+    // Reference to the Risc0 Verifier contract used for verifying ZK proofs.
     IRiscZeroVerifier private verifier;
-    // The image ID of the Risc0 prover program
+    // The image ID of the Risc0 prover program.
     bytes32 imageId;
-    // This will hold the reference to the ioID NFT identity contract.
+    // Reference to the ioID NFT identity contract.
     IioID public ioID;
-    // This will hold the reference to the ioID registry contract.
+    // Reference to the ioID registry contract.
     IioIDRegistry public ioIDRegistry;
-    // This will hold the reference to our DePIN token to distribute rewards.
+    // Reference to the ERC20 token used for distributing rewards.
     IERC20 private token;
 
     // Event emitted when a proof is successfully verified.
     event ProofVerified(address sender, bytes32 imageId, bytes32 postStateDigest);
-    // Event emitted when rewards are distributed.
+    // Event emitted when rewards are distributed to device owners.
     event RewardsDistributed(address receiver, uint256 amount);
 
     // Constructor to initialize the contract with the necessary addresses.
+    // Takes addresses of the verifier, token, ioID, and ioID registry contracts as input.
     constructor(
         address _verifierAddress,
         address _tokenAddress,
@@ -84,23 +89,26 @@ contract DePINDappContract is Ownable {
     }
 
     // Function to verify the ZK proof and distribute rewards based on the journal data.
+    // Takes project ID, prover ID, task ID, and encoded data containing the proof and journal as input.
     function verifyAndExecute(
         uint256 _projectId,
         uint256 _proverId, 
         uint256 _taskId, 
         bytes calldata _data
     ) external {
+        // Decode the input data to extract the proof seal and journal.
         (bytes memory proof_snark_seal, bytes memory proof_snark_journal) = abi.decode(_data, (bytes, bytes));
-        proof_seal = proof_snark_seal;
-        proof_journal = sha256(proof_snark_journal);
+        
+        // Calculate the SHA-256 hash of the proof journal.
+        bytes32 proof_journal_hash = sha256(proof_snark_journal);
+
         // Verify the ZK proof using the Risc0 verifier contract.
-        require(verifier.verifySnark(proof_snark_seal, imageId, sha256(proof_snark_journal)), "Proof verification failed.");
-        emit ProofVerified(msg.sender, imageId, postStateDigest);
+        require(verifier.verifySnark(proof_snark_seal, imageId, proof_journal_hash), "Proof verification failed.");
+        
+        // Emit the ProofVerified event upon successful verification.
+        emit ProofVerified(msg.sender, imageId, proof_journal_hash);
 
         // Decode the deviceID-rewards mapping from the journal data.
-        // (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(journal);
-        // JournalParser provides an example implementation of how to parse the journal
-        // Refer to https://github.com/machinefi/iotex-dewi-demo/blob/main/blockchain/contracts/lib/JournalParser.sol
         (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(proof_snark_journal);
 
         // Distribute rewards to the owners of the devices.
@@ -108,6 +116,7 @@ contract DePINDappContract is Ownable {
     }
 
     // Internal function to distribute rewards to device owners.
+    // Takes an array of devices with their rewards and the length of the array as input.
     function _distributeRewards(JournalParser.Device[] memory devices, uint256 devicesLen) internal {
         for (uint256 i = 0; i < devicesLen; i++) {
             uint256 deviceId = devices[i].id;
@@ -120,26 +129,31 @@ contract DePINDappContract is Ownable {
 
             // Transfer the reward amount to the device owner.
             require(token.transfer(owner, devices[i].reward), "Token transfer failed");
+            // Emit the RewardsDistributed event after successful transfer.
             emit RewardsDistributed(owner, devices[i].reward);
         }
     }
 
     // Function to update the verifier contract address (only callable by the owner).
+    // Takes the new verifier contract address as input.
     function updateVerifierAddress(address newVerifierAddress) external onlyOwner {
         verifier = IRiscZeroVerifier(newVerifierAddress);
     }
 
     // Function to update the token contract address (only callable by the owner).
+    // Takes the new token contract address as input.
     function updateTokenAddress(address newTokenAddress) external onlyOwner {
         token = IERC20(newTokenAddress);
     }
     
-    // Sets the image ID of the Risc0 prover 
-    function setImageId(bytes32 _imageId) public {
+    // Function to set the image ID of the Risc0 prover (only callable by the owner).
+    // Takes the new image ID as input.
+    function setImageId(bytes32 _imageId) public onlyOwner {
         imageId = _imageId;
     }
 
-    // Gets the image ID of the Risc0 prover 
+    // Function to get the image ID of the Risc0 prover.
+    // Returns the current image ID.
     function getImageId() public view returns (bytes32) {
         return imageId;
     }
