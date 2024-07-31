@@ -56,6 +56,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract DePINDappContract is Ownable {
     // This will hold the reference to the Risc0 Verifier contract.
     IRiscZeroVerifier private verifier;
+    // The image ID of the Risc0 prover program
+    bytes32 imageId;
     // This will hold the reference to the ioID NFT identity contract.
     IioID public ioID;
     // This will hold the reference to the ioID registry contract.
@@ -83,20 +85,23 @@ contract DePINDappContract is Ownable {
 
     // Function to verify the ZK proof and distribute rewards based on the journal data.
     function verifyAndExecute(
-        bytes calldata seal,
-        bytes32 imageId,
-        bytes32 postStateDigest,
-        bytes memory journal
+        uint256 _projectId,
+        uint256 _proverId, 
+        uint256 _taskId, 
+        bytes calldata _data
     ) external {
+        (bytes memory proof_snark_seal, bytes memory proof_snark_journal) = abi.decode(_data, (bytes, bytes));
+        proof_seal = proof_snark_seal;
+        proof_journal = sha256(proof_snark_journal);
         // Verify the ZK proof using the Risc0 verifier contract.
-        require(verifier.verifySnark(seal, imageId, postStateDigest, journal), "Proof verification failed.");
+        require(verifier.verifySnark(proof_snark_seal, imageId, sha256(proof_snark_journal)), "Proof verification failed.");
         emit ProofVerified(msg.sender, imageId, postStateDigest);
 
         // Decode the deviceID-rewards mapping from the journal data.
         // (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(journal);
         // JournalParser provides an example implementation of how to parse the journal
         // Refer to https://github.com/machinefi/iotex-dewi-demo/blob/main/blockchain/contracts/lib/JournalParser.sol
-        (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(journal);
+        (JournalParser.Device[] memory devices, uint256 devicesLen) = JournalParser.parseDeviceJson(proof_snark_journal);
 
         // Distribute rewards to the owners of the devices.
         _distributeRewards(devices, devicesLen);
@@ -127,6 +132,16 @@ contract DePINDappContract is Ownable {
     // Function to update the token contract address (only callable by the owner).
     function updateTokenAddress(address newTokenAddress) external onlyOwner {
         token = IERC20(newTokenAddress);
+    }
+    
+    // Sets the image ID of the Risc0 prover 
+    function setImageId(bytes32 _imageId) public {
+        imageId = _imageId;
+    }
+
+    // Gets the image ID of the Risc0 prover 
+    function getImageId() public view returns (bytes32) {
+        return imageId;
     }
 }
 
