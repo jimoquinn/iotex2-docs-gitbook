@@ -4,11 +4,11 @@
 This documentation is being updated.&#x20;
 {% endhint %}
 
-The DeWi (Decentralized Wireless) demo showcases the implementation and capabilities of decentralized wireless networks using the IoTeX blockchain. This demo illustrates the registration, setup, and operational processes involved in deploying a DeWi network on IoTeX, highlighting the key components and steps required to bring such a project to life.
+The DeWi (Decentralized WiFi Access Network) demo showcases the implementation of a DePIN project for a community-owned decentralized WiFi network using the IoTeX blockchain. This demonstration covers the essential components of a DeWi network and how to deploy them on IoTeX.
 
-## Repository
+We will guide you through the entire process, from registering your DePIN project and devices on IoTeX to managing device registration on the firmware side. The demo includes developing the DePIN verification logic and creating a DApp that distributes incentives to the owners of the WiFi routers. This comprehensive overview covers all the critical steps required to build the infrastructure.
 
-{% embed url="https://github.com/machinefi/iotex-dewi-demo" %}
+We encourage you to build Proofs of Concept (PoCs) for mobile apps and payment mechanisms that leverage this decentralized infrastructure.[Share your apps with the community, ](https://iotex.io/devdiscord)showcase your improvements and how the DeWi network can be enhanced with engaging and functional user interfaces.
 
 ## Key Sections
 
