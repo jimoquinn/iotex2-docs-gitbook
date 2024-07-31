@@ -16,12 +16,12 @@ In previous tutorials, we covered how to create the device firmware and how to w
 
 ## The code
 
-References:
+**References**
 
-* Build a W3bstream prover using Risc0:&#x20;
-* Risc0 Verifier contract deployment on IoTeX Testnet: [https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment](https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment)
-* Risc0 Verifier source code: [https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol](https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol)
-* Library to parse the Journal output created by our prover: [https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib](https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib)
+* [Build a W3bstream prover using Risc0](../../../depin-infra-modules-dim/w3bstream-depin-verification/build-with-w3bstream/build-the-prover-code/risc-zero.md):&#x20;
+* [Risc0 Verifier contract deployment on IoTeX Testnet](https://github.com/iotexproject/w3bstream/tree/develop/smartcontracts#deployment)
+* [Risc0 Verifier source code](https://github.com/iotexproject/w3bstream/blob/develop/examples/risc0-circuit/contract/RiscZeroGroth16Verifier.sol)
+* [Library to parse the Journal output created by our DeWi prover](https://github.com/machinefi/iotex-dewi-demo/tree/main/blockchain/contracts/lib)
 
 ```solidity
 // SPDX-License-Identifier: MIT
