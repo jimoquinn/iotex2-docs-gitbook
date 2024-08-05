@@ -10,6 +10,10 @@ IoTeX compatibility with the Ethereum RPC API means that you can use familiar to
 
 By supporting the latest EVM, IoTeX ensures that your Solidity smart contracts will run without modification, enabling you to port existing applications and develop new ones with ease.
 
+{% hint style="info" %}
+IoTeX currently supports the **Shangai** EVM release and the **Solidity** compiler **0.8.20**
+{% endhint %}
+
 This document will guide you through the necessary steps to get started, including setting up your development environment, deploying smart contracts, and connecting to IoTeX using popular Ethereum tools.&#x20;
 
 Let's dive in and explore the possibilities of building on IoTeX!
