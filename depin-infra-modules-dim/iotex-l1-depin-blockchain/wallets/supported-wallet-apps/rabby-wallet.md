@@ -9,7 +9,7 @@ Its intuitive design and native integration with IoTeX make Rabby Wallet an exce
 <figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For those ready to dive into the IoTeX ecosystem with Rabbit Wallet, the next step is simply downloading the application.
+For those ready to dive into the IoTeX ecosystem with Rabby Wallet, the next step is simply downloading the application.
 
-\-> Visit the [Rabbit Wallet download page](https://therabbit.io) to get started.&#x20;
+\-> Visit the [Rabby Wallet download page](https://therabbit.io) to get started.&#x20;
 {% endhint %}

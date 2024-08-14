@@ -30,6 +30,7 @@
     * [Supported Wallet Apps](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/README.md)
       * [ioPay Mobile](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/iopay-mobile.md)
       * [IoTeX Web Wallet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/iotex-web-wallet.md)
+      * [OKX Wallet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/okx-wallet.md)
       * [Rabby Wallet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/rabby-wallet.md)
       * [Metamask Desktop](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/metamask-desktop.md)
       * [IoTeX Desktop Wallet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/iotex-desktop-wallet/README.md)
