@@ -1,6 +1,8 @@
 # Fastblocks (Node as a Service)
 
-[_Fastblocks_](https://www.fastblocks.io/) is a PaaS (_Platform as a Service_) product, that aims to lower the threshold of accessing IoTeX data and solve the problems that arise when building nodes by yourself such as environmental consistency, security, network speed and storage space. The _Fastblocks_ platform is based on an advanced, dynamically scalable, and microservice-driven architecture, providing a service of resilient and dedicated nodes customized for IoTeX.
+**FastBlocks** is a product designed to simplify the management of an IoTeX node, making it an ideal solution for node operators who prioritize ease of use and efficiency. FastBlocks streamlines the setup and maintenance of your node, allowing you to focus on core operations without getting bogged down by the complexities of node management.
+
+With FastBlocks, you can quickly deploy, synchronize and update your IoTeX node, reducing the time and effort typically required for these tasks.&#x20;
 
 {% hint style="info" %}
 Check out the full [_Fastblocks_](https://docs.fastblocks.io/) documentation below 👇
