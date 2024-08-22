@@ -1,6 +1,6 @@
 # Node Operators
 
-This section of the documentation outlines the various options for running and managing a node on the IoTeX Mainnet, whether your goal is to serve as an RPC endpoint or participate as a delegate in the consensus process.
+This section of the documentation outlines the various options for running and managing a node on the IoTeX, whether your goal is to serve as an RPC endpoint or participate as a delegate in the consensus process.
 
 Node operators have the option to configure two types of IoTeX nodes: **Full Nodes** and **Archive Nodes**.
 
