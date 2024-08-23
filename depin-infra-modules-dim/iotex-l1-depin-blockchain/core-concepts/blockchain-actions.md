@@ -6,31 +6,10 @@ An action is fundamentally a packet of data, signed by a blockchain account, tha
 
 In IoTeX, there are different types of Actions depending on the type of operation required:
 
-<details>
-
-<summary>Transfer Action</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Execution Action</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Governance Actions</summary>
-
-
-
-</details>
+* Transfer Action
+* Execution Action
+* Governance Actions
 
 Find the structure for all IoTeX Actions in the protobuf definition on GitHub:
 
 {% embed url="https://github.com/iotexproject/iotex-proto/blob/master/proto/types/action.proto" %}
-
