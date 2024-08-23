@@ -30,6 +30,7 @@ In IoTeX, there are different types of Actions depending on the type of operatio
 
 </details>
 
-**Find the structure for all IoTeX Actions in the protobuf definition on GitHub:**
+Find the structure for all IoTeX Actions in the protobuf definition on GitHub:
 
-[![Logo](https://github.com/fluidicon.png)iotex-proto/action.proto at master · iotexproject/iotex-protoGitHub](https://github.com/iotexproject/iotex-proto/blob/master/proto/types/action.proto)
+{% embed url="https://github.com/iotexproject/iotex-proto/blob/master/proto/types/action.proto" %}
+
