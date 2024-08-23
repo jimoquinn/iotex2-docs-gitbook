@@ -9,5 +9,3 @@ Currently, IoTeX supports the **Shangai EVM** **release** and the **Solidity** c
 This compatibility provides access to a wide range of Ethereum-based tools and libraries, enhancing the development ecosystem.
 
 [↗ Building and Deploying Smart contracts on IoTeX](../../../builders/web3-development/)
-
-↗ Notable contract addresses on IoTeX
