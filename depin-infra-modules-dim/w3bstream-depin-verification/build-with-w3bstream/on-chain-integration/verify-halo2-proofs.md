@@ -10,7 +10,7 @@ You must have built an Halo2 verifier executable. [-> Learn more here.](../build
 
 ## Generate the Verifier Contract
 
-A Solidity verifier contract can be generated with:
+After the prover is built, a Solidity verifier contract can be generated with:
 
 ```sh
 target/release/halo2-simple-circuit solidity -f ./verifier.sol
@@ -20,8 +20,6 @@ Generated verifier contract size: 8100
 
 Just ensure you customize the `halo2-simple-circuit`  executable name with your own prover name.
 
-## Example
+## Example W3bstream Dapp (Halo2)
 
-{% hint style="warning" %}
-This documentation is coming soon.
-{% endhint %}
+{% embed url="https://github.com/iotexproject/w3bstream/blob/develop/examples/halo2-circuit/contracts/Halo2Dapp.sol" %}
