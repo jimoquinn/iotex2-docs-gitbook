@@ -6,7 +6,7 @@ This documentation is work in progress.
 
 In previous tutorials, we covered how to create the device firmware for a WiFi access point for our demo DeWi infrastructure, and how to write and deploy the W3bstream prover logic to compute rewards generated per device.
 
-In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of of the WiFi routers in our network.
+In this tutorial, we will take the next step by creating a smart contract that implements basic DePIN incentives for the owners of the WiFi routers in our network.
 
 ## **Assumptions**
 
