@@ -1,3 +1,3 @@
 # Notable IoTeX Contracts
 
-In this section we collect several notable contract addresses on the IoTeX Blockchain with their ABI to facilitate developers to integrate with several ecosystem tools.
+In this section, we provide a list of key contract addresses on the IoTeX Blockchain along with their corresponding ABIs. These contracts are essential for developers who wish to integrate various ecosystem tools into their Dapps.

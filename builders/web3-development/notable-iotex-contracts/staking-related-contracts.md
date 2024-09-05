@@ -1,6 +1,6 @@
 # Staking-Related Contracts
 
-##
+## Overview
 
 In addition to standard EVM transactions for native token transfers and contract executions, IoTeX introduces specialized transactions dedicated to the native staking functionality that is integral to the IoTeX consensus mechanism.
 
