@@ -32,11 +32,11 @@ Voters can access detailed reports about the reward distribution process at [her
 
 HERMES operates via a smart contract on the IoTeX blockchain, ensuring transparency and immutability of the rewards distribution process.
 
-### **Smart Contract Address**&#x20;
+**Smart Contract Address:** `0x4839f8718709d4f76c6f23625908cfdc4330ef82`
 
-`0x4839f8718709d4f76c6f23625908cfdc4330ef82`
+<details>
 
-### **Smart Contract ABI**
+<summary><strong>Smart Contract ABI</strong></summary>
 
 ```javascript
 [
@@ -486,3 +486,12 @@ HERMES operates via a smart contract on the IoTeX blockchain, ensuring transpare
 
     
 ```
+
+
+
+</details>
+
+## **What You Can Index**
+
+* **Rewards distribution data**: By monitoring the `Distribute` event, you can track how much was distributed, when, and to whom (delegates and recipients).
+* **Delegate rewards summary**: Use the `distributedAmount` and `distributedCount` functions to track total amounts distributed per delegate and number of distributions.
