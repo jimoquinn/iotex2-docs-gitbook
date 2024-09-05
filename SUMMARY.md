@@ -148,6 +148,8 @@
     * [👩‍💻 Creating new Accounts](builders/web3-development/account-abstraction/creating-new-accounts.md)
     * [👨‍💻 P256Account Example](builders/web3-development/account-abstraction/p256account-example.md)
   * [Multicall3](builders/web3-development/multicall3.md)
+  * [Notable IoTeX Contracts](builders/web3-development/notable-iotex-contracts/README.md)
+    * [HERMES Delegate Rewards](builders/web3-development/notable-iotex-contracts/hermes-delegate-rewards.md)
 * [Building DePINs](builders/depin/README.md)
   * [End-to-End DeWi Demo](builders/depin/end-to-end-dewi-demo/README.md)
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
