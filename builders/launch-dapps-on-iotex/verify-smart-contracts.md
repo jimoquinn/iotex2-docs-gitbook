@@ -18,6 +18,8 @@ Follow the guide below to verify multiple contracts using Hardhat:
 
 In this tutorial, we will guide you through the entire process of verifying a smart contract using [IoTeXscan](https://iotexscan.io/verify-contract). Starting with contract creation, we'll then deploy it to the IoTeX testnet, and conclude by verifying the contract through [Hardhat](https://hardhat.org/hardhat-runner/docs/guides/verifying).
 
+Or you can refer this repository [https://github.com/iotexproject/hardhat-verify-smaple](https://github.com/iotexproject/hardhat-verify-smaple)
+
 ### Setting Up a Hardhat Project <a href="#setting-up-a-hardhat-project" id="setting-up-a-hardhat-project"></a>
 
 1. **Install NodeJS:** Ensure NodeJS is installed on your system.
@@ -135,39 +137,63 @@ In this tutorial, we will guide you through the entire process of verifying a sm
 
     ```sh
     npm install --save-dev @nomicfoundation/hardhat-verify
+    or
+    npm install --save-dev @nomicfoundation/hardhat-toolbox
     ```
 2.  **Update Hardhat Configuration:** Edit `hardhat.config.js` by adding the configuration for contract verification, make sure you use your API key:
 
 
 
-    ```javascript
-    etherscan: {
-        apiKey: "YOUR_ETHER",
+    ````javascript
+    ```typescript
+    import 'dotenv/config'
+    import { HardhatUserConfig } from "hardhat/config";
+    import "@nomicfoundation/hardhat-toolbox";
+
+    const config: HardhatUserConfig = {
+      solidity: "0.8.20",
+      networks: {
+        iotex: {
+          chainId: 4689,
+          url: 'https://babel-api.mainnet.iotex.io',
+          accounts: [
+            process.env.PRIVATE_KEY!
+          ]
+        }
+      },
+      etherscan: {
+        apiKey: "arbitrary value",// It's here just for hardhat arguments validation
+        //It  can be set as arbitrary value
         customChains: [
           {
             network: "mainnet",
             chainId: 4689,
             urls: {
-              apiURL: "https://IoTeXscout.io/api",
-              browserURL: "https://IoTeXscan.io"
+              apiURL: "https://iotexscout.io/api",
+              browserURL: "https://iotexscan.io"
             }
           },
           {
             network: "testnet",
             chainId: 4690,
             urls: {
-              apiURL: "https://testnet.IoTeXscout.io/api",
-              browserURL: "https://testnet.IoTeXscan.io"
+              apiURL: "https://testnet.iotexscout.io/api",
+              browserURL: "https://testnet.iotexscan.io"
             }
           }
         ],
       },
+    };
+
+    export default config;
+
     ```
+    ````
 3.  **Verify the Contract:** Execute the following command, replacing `<address>` with your contract's address:
 
 
 
     ```sh
-    npx hardhat verify --network testnet YOUR_CONTRACT_ADDRESS
+    npx hardhat verify --network testnet YOUR_CONTRACT_ADDRESS [...arguments in constructor]
     ```
 4. Upon successful execution, you'll receive a link to your contract's verified code on IoTeXscan.
