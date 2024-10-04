@@ -152,7 +152,7 @@
     * [HERMES Delegate Rewards](builders/web3-development/notable-iotex-contracts/hermes-delegate-rewards.md)
     * [Staking-Related Contracts](builders/web3-development/notable-iotex-contracts/staking-related-contracts.md)
 * [Building DePINs](builders/depin/README.md)
-  * [End-to-End DeWi Demo](builders/depin/end-to-end-dewi-demo/README.md)
+  * [Decentralized WiFi Connectivity (DeWi)](builders/depin/end-to-end-dewi-demo/README.md)
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
     * [The choice of Hardware](builders/depin/end-to-end-dewi-demo/the-choice-of-hardware.md)
     * [The Data API Service](builders/depin/end-to-end-dewi-demo/the-data-api-service.md)
