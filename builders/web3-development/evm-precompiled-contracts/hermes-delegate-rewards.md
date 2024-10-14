@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # HERMES Delegate Rewards
 
 ## Overview
