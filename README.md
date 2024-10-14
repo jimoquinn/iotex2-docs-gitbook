@@ -4,8 +4,8 @@ description: DePIN For Everyone!
 
 # Welcome to IoTeX 2.0
 
-{% hint style="warning" %}
-This documentation portal is currently undergoing updates to align with the [IoTeX 2.0 Whitepaper release](welcome-to-iotex-2.0/whitepaper.md). Please use this portal for preliminary reference.
+{% hint style="success" %}
+[IoTeX 2.0 Whitepaper release](welcome-to-iotex-2.0/whitepaper.md)
 {% endhint %}
 
 Since its inception, IoTeX has been a pioneer in the blockchain industry, focusing on creating secure and scalable infrastructures that bridge the gap between the physical and digital worlds. Initially established as a Layer 1 blockchain, IoTeX has expanded its vision by spearheading the development of **Decentralized Physical Infrastructure Networks (DePINs).**
