@@ -4,7 +4,7 @@
 
 The IoTeX Desktop Wallet is the official (legacy) desktop wallet for IoTeX.&#x20;
 
-{% hint style="info" %}
+{% hint style="warning" %}
 While this wallet remains available for existing users, we highly recommend using MetaMask or your preferred Ethereum wallet for a more up-to-date experience, optionally in conjunction with the IoTeX Web Wallet.
 {% endhint %}
 
