@@ -96,7 +96,7 @@ See a go lang implementation for the [bech32 encoding](https://github.com/iotexp
 
 ## Address Conversion Examples
 
-Developers can refer to the iotex-antenna SDK source code to learn how IoTeX native addresses are created and converted between 0x and io1 formats. Below you can also find two short examples:
+Developers can refer to the **iotex-address library** ([Go](https://github.com/iotexproject/iotex-address) | [Typescript](https://github.com/iotexproject/iotex-address-ts) | [Java](https://github.com/iotexproject/iotex-address-java))  to learn how IoTeX native addresses are created and converted between 0x and io1 formats. Below you can also find two short examples:
 
 ### Convert from `io1` to `0x` format
 
