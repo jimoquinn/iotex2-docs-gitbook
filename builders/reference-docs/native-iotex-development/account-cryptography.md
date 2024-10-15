@@ -2,6 +2,8 @@
 
 IoTeX uses cryptographic techniques to secure its accounts and ensure the integrity and authenticity of transactions. Specifically, IoTeX account generation and digital signature are based on the same cryptographic schemes as Ethereum.
 
+## Overview
+
 Here are the key components of IoTeX's account cryptography:
 
 1. **Elliptic Curve Digital Signature Algorithm (ECDSA):**
@@ -35,7 +37,7 @@ and the corresponding **Public Key** is derived from the private key using ECDSA
 
 Given a signed message, you can recover the public key of the signing account using [Ecrecover](https://github.com/ethereum/go-ethereum/blob/master/crypto/signature\_cgo.go#L36), also defined in [solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html?highlight=ecrecover#recovering-the-message-signer-in-solidity) for signature verification in smart contracts.
 
-### Native Address Construction <a href="#address-construction" id="address-construction"></a>
+## Native Address Construction <a href="#address-construction" id="address-construction"></a>
 
 An IoTeX native representation of an account address looks like:
 
@@ -91,3 +93,57 @@ address := io1bc1qz3lgqhy93pqqnyvsugyd0gz2wne2p2kght0g4r
 {% hint style="info" %}
 See a go lang implementation for the [bech32 encoding](https://github.com/iotexproject/iotex-address/blob/b07b71fc7866257680b75f1ab9c79c95dc6d255b/address/bech32/bech32.go#L97) implementation or a [nodejs](https://www.npmjs.com/package/bech32) package (use `encode` to encode 5-bit words with a prefix).
 {% endhint %}
+
+## Address Conversion Examples
+
+Developers can refer to the iotex-antenna SDK source code to learn how IoTeX native addresses are created and converted between 0x and io1 formats. Below you can also find two short examples:
+
+### Convert from `io1` to `0x` format
+
+```javascript
+const { bech32 } = require('bech32');
+
+// Function to decode IoTeX address to Ethereum address
+const ioToEthAddress = (ioAddress) => {
+  // Step 1: Decode the Bech32 IoTeX address
+  const decoded = bech32.decode(ioAddress);
+  
+  // Step 2: Convert 5-bit words back to bytes
+  const words = bech32.fromWords(decoded.words);
+
+  // Step 3: Slice the last 20 bytes (Ethereum address is 20 bytes)
+  const ethAddressBytes = Buffer.from(words).slice(-20);
+
+  // Step 4: Convert to Ethereum-style hex address
+  const ethAddress = ethAddressBytes.toString('hex');
+  return `0x${ethAddress}`;
+};
+
+// Test the function
+const ioAddress = 'io12etkzmykk4mnavvqjgcrprnzhq8zxahqr698nl'; // Replace with IoTeX address
+console.log(`Ethereum Address: ${ioToEthAddress(ioAddress)}`);
+```
+
+### Convert from `0x` to `io1` format
+
+```javascript
+const { bech32 } = require('bech32');
+
+// Function to convert Ethereum address to IoTeX address
+const ethToIoAddress = (ethAddress) => {
+  // Step 1: Remove the '0x' prefix and convert the hex string to a byte array
+  const ethAddressBytes = Buffer.from(ethAddress.slice(2), 'hex');
+
+  // Step 2: Convert the byte array into 5-bit words for Bech32 encoding
+  const words = bech32.toWords(ethAddressBytes);
+
+  // Step 3: Encode the words into a Bech32 IoTeX address with the 'io' prefix
+  const ioAddress = bech32.encode('io', words);
+  return ioAddress;
+};
+
+// Test the function
+const ethAddress = '0x5657616c96b5773eb1809230308e62b80e2376e0'; // Replace with your Ethereum address
+console.log(`IoTeX Address: ${ethToIoAddress(ethAddress)}`);
+```
+
