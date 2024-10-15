@@ -1,8 +1,8 @@
-# Integrating $IOTX on Your Exchange
+# Exchange Integration
 
 This guide will walk you through the process of integrating the IoTeX token (`$IOTX`) on your exchange. Since IoTeX is fully **Ethereum-compatible**, most integration steps will resemble those of any EVM blockchain. Below are the detailed steps, requirements, and resources necessary for seamless integration.
 
-If you require further assistance, please don’t hesitate to [reach out to our support team](integrating-usdiotx-on-your-exchange.md#id-8.-support-and-contact).
+If you require further assistance, please don’t hesitate to [reach out to our support team](exchange-integration.md#id-8.-support-and-contact).
 
 ## 1. Overview of IoTeX and $IOTX Token
 
