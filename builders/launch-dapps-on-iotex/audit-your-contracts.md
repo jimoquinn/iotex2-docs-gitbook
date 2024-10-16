@@ -4,6 +4,8 @@ Smart contract audits are the first line of defense to safeguard your funds and 
 
 While there are many valid audit firms available on the market, IoTeX builders have special perks with some of our ecosystem partners, such as:
 
+{% embed url="https://fuzz.land/" %}
+
 {% embed url="https://www.secure3.io/" %}
 
 {% embed url="https://chainshield.io/" %}
