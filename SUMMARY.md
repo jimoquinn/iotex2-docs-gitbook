@@ -130,7 +130,7 @@
 ## Builders
 
 * [IoTeX Developer Portal](https://developers.iotex.io)
-* [Dev Chat on Discord](https://discord.com/channels/534888542648664074/953749973105782844)
+* [Dev Chat on Discord](https://discord.com/channels/534888542648664074/832240954873217055)
 * [Web3 Development](builders/web3-development/README.md)
   * [RPC Endpoints](builders/web3-development/rpc-endpoints.md)
   * [Set up your Environment](builders/web3-development/set-up-your-environment.md)
