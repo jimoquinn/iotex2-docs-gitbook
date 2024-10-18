@@ -4,6 +4,10 @@ Any DePIN project intending to use ioID identities must apply for a certain numb
 
 ## Using the IoTeX CLI (`ioctl`)
 
+{% hint style="warning" %}
+Please notice that this ioctl command currently only supports the IoTeX Testnet.
+{% endhint %}
+
 ```sh
 ioctl ioid register "My DePIN Project"
 
