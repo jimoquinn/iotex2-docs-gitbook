@@ -12,23 +12,14 @@ You can use IoTeXScan’s API just as you would use the Etherscan API. The API a
 
 Here are the key steps to start using the API:
 
-#### 1. Base URL
+**Base URL**: [https://index.iotexscan.io/api](https://index.iotexscan.io/api)
 
-The base URL for the API is: [https://index.iotexscan.io/api](https://index.iotexscan.io/api)
+**API Key:** To interact with the IoTeXScan API, no API key is required. However, queries are rate-limited to 1 request per second.
 
-#### 2. API Key
-
-To interact with the IoTeXScan API, no API key is required. However, queries are rate-limited to 1 request per second.
-
-#### 3. Making Requests
-
-Use the endpoint with standard HTTPS tools and libraries to start making queries, using the Ethereum 0x format for addresses.
-
-Example endpoint
+**Example endpoint:**
 
 ```
-https://index.iotexscan.io/api
-module=account&action=balance&address=0x139929a597b91ea89f41026b65b281611890f13b
+https://index.iotexscan.io/api?module=account&action=balance&address=0x139929a597b91ea89f41026b65b281611890f13b
 ```
 
 ## Complete API
