@@ -171,6 +171,7 @@
 * [Launch Dapps on IoTeX](builders/launch-dapps-on-iotex/README.md)
   * [Submit Tokens to the IoTeX Ecosystem](builders/launch-dapps-on-iotex/submit-tokens-to-the-iotex-ecosystem.md)
   * [Submit tokens to the iotube bridge](builders/launch-dapps-on-iotex/submit-tokens-to-the-iotube-bridge.md)
+  * [IoTeXscan API](builders/launch-dapps-on-iotex/iotexscan-api.md)
   * [Verify Smart Contracts](builders/launch-dapps-on-iotex/verify-smart-contracts.md)
   * [Audit your Contracts](builders/launch-dapps-on-iotex/audit-your-contracts.md)
   * [Submit your Dapp to Portals](builders/launch-dapps-on-iotex/submit-your-dapp-to-portals.md)
