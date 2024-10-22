@@ -112,7 +112,7 @@
   * [DePINScan](ecosystem/ecosystem-apps/depinscan.md)
   * [mimo DEX](ecosystem/ecosystem-apps/mimo-dex.md)
   * [ecosystem.iotex.io](https://ecosystem.iotex.io)
-* [Powered by IoTeX Devices](ecosystem/powered-by-iotex-devices/README.md)
+* ["Powered by IoTeX" Devices](ecosystem/powered-by-iotex-devices/README.md)
   * [Pebble Tracker](ecosystem/powered-by-iotex-devices/pebble-tracker/README.md)
     * [Quick Start](ecosystem/powered-by-iotex-devices/pebble-tracker/quick-start.md)
     * [Tech Specs](ecosystem/powered-by-iotex-devices/pebble-tracker/tech-specs.md)
