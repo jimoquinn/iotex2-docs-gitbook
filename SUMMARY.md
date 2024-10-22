@@ -120,6 +120,7 @@
     * [Network Selection](ecosystem/powered-by-iotex-devices/pebble-tracker/network-selection.md)
     * [Pebble Configuration](ecosystem/powered-by-iotex-devices/pebble-tracker/pebble-configuration.md)
     * [Query Pebble Data](ecosystem/powered-by-iotex-devices/pebble-tracker/query-pebble-data.md)
+    * [Troubleshooting](ecosystem/powered-by-iotex-devices/pebble-tracker/troubleshooting.md)
     * [Firmware Development](ecosystem/powered-by-iotex-devices/pebble-tracker/firmware-development/README.md)
       * [Hardware Setup](ecosystem/powered-by-iotex-devices/pebble-tracker/firmware-development/hardware-setup.md)
       * [Build the Firmware](ecosystem/powered-by-iotex-devices/pebble-tracker/firmware-development/build-the-firmware.md)

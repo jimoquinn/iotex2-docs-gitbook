@@ -86,11 +86,3 @@ then click the “`Flash APP Firmware`” button:
 <figure><img src="https://github.com/iotexproject/iotex-docs-gitbook/raw/master/.gitbook/assets/image%20(84).png" alt=""><figcaption></figcaption></figure>
 
 Wait for the firmware upgrade to complete. The device will reboot automatically after the operation is completed, and the new firmware will be loaded.
-
-## Troubleshooting
-
-### Access the device Public Key
-
-Opening the Info Menu on your Pebble Tracker will give you access to the IMEI and Serial Number, as well as allow you to obtain the device’s public key using the Pebble Desktop tool, if needed.
-
-{% embed url="https://youtu.be/amEJx5AgdNI" fullWidth="false" %}
