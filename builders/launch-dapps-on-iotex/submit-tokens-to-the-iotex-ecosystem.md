@@ -1,6 +1,6 @@
 # Submit Tokens to the IoTeX Ecosystem
 
-If you already [deployed a token on the IoTeX blockchain](https://developers.iotex.io/posts/Deploy-a-smart-contract-using-Hardhat), and you want it to show up into IoTeX ecosystem tools such as the [block explorer](https://iotexscan.io/) and the official [ioPay wallets](https://iotex.io/iopay), then you can **register your token metadata** into the ecosystem using the link below:
+If you already [deployed a token on the IoTeX blockchain](../defi/deploy-tokens/deploy-an-erc20-token.md), and you want it to show up into IoTeX ecosystem tools such as the [block explorer](https://iotexscan.io/) and the official [ioPay wallets](https://iotex.io/iopay), then you can **register your token metadata** into the ecosystem using the link below:
 
 {% embed url="https://github.com/iotexproject/iotex-token-metadata" %}
 
