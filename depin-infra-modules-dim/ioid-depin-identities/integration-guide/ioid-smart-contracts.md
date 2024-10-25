@@ -2,7 +2,7 @@
 
 The ioID suite of smart contracts provides a robust framework for decentralized identity management on the IoTeX blockchain. These contracts collectively provide a robust framework for identity management and interaction within the IoTeX ecosystem.&#x20;
 
-{% hint style="info" %}
+{% hint style="warning" %}
 ↗  For more details, source code and deployments, you can visit the [GitHub repository](https://github.com/machinefi/ioID-contracts).
 {% endhint %}
 

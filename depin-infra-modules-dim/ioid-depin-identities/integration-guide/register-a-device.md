@@ -1,6 +1,8 @@
 # Register a Device
 
-After binding a Device NFT contract to a DePIN project and requesting a specific number of ioIDs for the project, physical devices can be registered n the ioIDRegistry contract, effectively "_activating_" the ioID. This activation process is carried out by the device owner and involves minting an ioID NFT to the device owner's account. During the minting process the ioID is associated with a specific Device NFT token, where the device's DID (Decentralized Identifier) serves as the token's ID.&#x20;
+After binding a Device NFT contract to a DePIN project and requesting a specific number of ioIDs for the project, physical devices can be registered in the ioIDRegistry contract, effectively "_activating_" the ioID.&#x20;
+
+This activation process must be carried out by the device owner and involves minting an ioID NFT to the device owner's account. During the minting process the ioID is associated with a specific Device NFT token, where the device's DID (Decentralized Identifier) serves as the token's ID.&#x20;
 
 ## Contract Call
 

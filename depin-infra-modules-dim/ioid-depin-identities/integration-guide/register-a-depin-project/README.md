@@ -1,6 +1,8 @@
-# Register a DePIN Project
+# 1. Register a DePIN Project
 
-Any DePIN project intending to use ioID identities must apply for a certain number of ioIDs by paying the required amount. ioIDs can only be requested by registered DePIN projects on the IoTeX blockchain. Here’s how to register your project:
+The first step for any DePIN project intending to integrate with ioID identities is to register the project on the IoTeX blockchain to obtain a Project ID.&#x20;
+
+Here’s how to register your project:
 
 ## Using the IoTeX CLI (`ioctl`)
 

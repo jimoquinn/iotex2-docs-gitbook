@@ -1,14 +1,16 @@
 # Deploy the Device NFT
 
-To integrate a DePIN project with the IoTeX ioID module, the project owner starts by deploying "**Device NFT**" contract to tokenize each device within their project.&#x20;
+To integrate a DePIN project with the IoTeX ioID module, the project owner starts by deploying "**Device NFT**" contract to tokenize each device within their project, unless such contract already exist.&#x20;
 
 {% hint style="info" %}
-While the contract is required to implement the ERC-721 Non-Fungible Token standard, the ioID framework does not impose specific implementation requirements, allowing for project-specific customization.&#x20;
+While the contract is required to implement the ERC-721, the ioID framework does not impose specific implementation requirements, allowing for project-specific customization.&#x20;
 {% endhint %}
 
-A user who owns a device NFT from a DePIN project is entitled to register a new ioID identity for a physical device and bind it to their blockchain wallet. When a new ioID is registered for a device, an ioID NFT is minted to the owner's wallet, and the corresponding device NFT is transferred to the ERC-6551 wallet of the ioID. This process effectively "activates" the ioID, linking the physical device to its digital identity and to its owner on the blockchain.&#x20;
+Such NFT contract will be linked to your Project ID and only users who own a valid device NFT for a DePIN project are entitled to register a new ioID identity for a physical device and bind it to their blockchain wallet.&#x20;
 
-Below is an example NFT contract that can be used as a Device NFT by a DePIN project:
+While the Device token contract could be a plain NFT721, below is an example for a typical customization that can be used as a Device NFT by a DePIN project.
+
+
 
 <details>
 
@@ -66,8 +68,6 @@ contract DeviceNFT is ERC721, Ownable {
     }
 }
 ```
-
-
 
 </details>
 
