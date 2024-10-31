@@ -2,27 +2,61 @@
 
 ## Install
 
-#### Install Latest Release Build
+### Install Latest Release Build
 
 ```bash
 curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cli.sh | sh
 ```
 
-#### Install Latest Unstable Build
+### Install Latest Unstable Build
 
 ```bash
 curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cli.sh | sh -s "unstable"
 ```
 
-#### Build the current development branch
+### Build the current development branch
+
+#### Clone & Build ioctl
 
 ```sh
 git clone https://github.com/iotexproject/iotex-core.git
 cd iotex-core
-make ioctl && mv bin/ioctl __YOUR_SYSTEM_PATH__
+make ioctl
 ```
 
-#### Show Version
+#### Move ioctl to a folder in your system path
+
+{% tabs %}
+{% tab title="macOS" %}
+```
+sudo mv bin/ioctl /usr/local/bin
+```
+{% endtab %}
+
+{% tab title="Linux" %}
+```
+sudo mv bin/ioctl /usr/local/bin
+```
+
+
+{% endtab %}
+
+{% tab title="Windows" %}
+Move the ioctl executables to a folder in your system path, for example:
+
+```
+mv bin/ioctl.exe "C:\Program Files\Git\cmd"
+```
+
+Add the directory to PATH (if it’s not already):
+
+• Open **System Properties** > Environment Variables.
+
+• Under **System Variables**, find `Path`, and either confirm it includes your chosen folder or add it.
+{% endtab %}
+{% endtabs %}
+
+### Verify the installation
 
 `Usage: ioctl version`
 
