@@ -6,14 +6,14 @@ Let's start with a simple ERC20 token an example contract:
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ExampleToken is ERC20, Ownable {
-    constructor(uint256 initialSupply) ERC20("ExampleToken", "ETK") {
-        _mint(msg.sender, initialSupply);
+    constructor() ERC20("ExampleToken", "ETK") Ownable(msg.sender) {
+        _mint(msg.sender, 1000);
     }
 
     function mint(address to, uint256 amount) external onlyOwner {
@@ -38,17 +38,30 @@ contract ExampleToken is ERC20, Ownable {
 
 ### **Set up the environment**
 
-* [Install Node.js and npm](https://nodejs.org/en/download/package-manager).
-* Create a folder for your project: `mkdir ExampleToken && cd ExampleTokem`.
-* Install Hardhat: `npm install --save-dev hardhat`.
-* Create a new Hardhat project: `npx hardhat`.
-* Follow the prompts to set up a basic sample project.
+Ensure you have the latest nodeJS and npm:
 
-### **Install dependencies**
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 22
+nvm use 22
+nvm alias default 22
+npm install npm --global # Upgrade npm to the latest version
+```
+
+Create a new Hardhat project:
+
+```bash
+mkdir ExampleToken && cd ExampleTokem
+npm init
+npm install --save-dev hardhat
+npx hardhat init
+```
+
+### **Install dependencies & Hardhat plugins**
 
 ```bash
 npm install @openzeppelin/contracts
-npm install --save-dev @nomiclabs/hardhat-ethers ethers
+npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```
 
 ### **Update Hardhat Config**
@@ -56,62 +69,63 @@ npm install --save-dev @nomiclabs/hardhat-ethers ethers
 Open `hardhat.config.js` and configure the IoTeX network:
 
 ```javascript
-require("@nomiclabs/hardhat-ethers");
+javascript
+require("@nomicfoundation/hardhat-toolbox");
 
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.20",
   networks: {
-    iotex: {
-      url: "https://babel-api.mainnet.iotex.io",
-      accounts: [`0x${YOUR_PRIVATE_KEY}`]
+    testnet: {
+      url: "https://babel-api.testnet.iotex.io",
+      accounts: [`${TESTNET_PRIVATE_KEY}`]
+    },
+    mainnet: {
+      url: "https://babel-api.testnet.iotex.io",
+      accounts: [`${MAINNET_PRIVATE_KEY}`]
     }
   }
 };
 ```
 
-Replace `YOUR_PRIVATE_KEY` with the private key of the account you want to use for deployment.
+Replace `TESTNET_PRIVATE_KEY` with the private key of the account you want to use for deployment.
 
 {% hint style="info" %}
 [-> Configure an IoTeX Wallet](../../../depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/)
 
-[-> Claim Test IOTX](broken-reference)
+[→ Request test IOTX tokens ](https://developers.iotex.io/faucet)
 {% endhint %}
 
 ### **Create the Contract File**
 
-Create a new `contracts` directory and new file `contracts/ExampleToken.sol` and add the ERC20 token contract code [provided above](deploy-an-erc20-token.md#example-contract).
+Create a new `contracts` directory and new file `contracts/ExampleToken.sol` and add the ERC20 token contract code [provided above](deploy-an-erc20-token.md#example-contract) (make sure you delete any example contracts already created in the contracts folder).
 
-### **Write a Deployment Script**
+### **Write an ignition module for Deployment**
 
-Create a new directory `scripts` and add a file `deploy.js` with the following content:
+Inside the `ignition` folder add a file `ExampleToken.js` with the following content:
 
 ```javascript
-async function main() {
-    const [deployer] = await ethers.getSigners();
-    console.log("Deploying contracts with the account:", deployer.address);
+const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+const { parseUnits } = require("ethers"); // Ensure you import parseUnits from ethers
 
-    const initialSupply = ethers.utils.parseUnits("1000", 18); // 1000 tokens with 18 decimals
-    const Token = await ethers.getContractFactory("ExampleToken");
-    const token = await Token.deploy(initialSupply);
+const ExampleTokenModule = buildModule("ExampleTokenModule", (m) => {
 
-    console.log("Token deployed to:", token.address);
-}
+  // Deploy the ExampleToken contract with the specified initial supply
+  const token = m.contract("ExampleToken");
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  return { token };
+});
+
+module.exports = ExampleTokenModule;
 ```
 
-### **Deploy the Contract**:
+### **Deploy the Contract**
 
 ```bash
-npx hardhat run scripts/deploy.js --network iotex
+npx hardhat ignition deploy ./ignition/modules/ExampleToken.js --network testnet
 ```
 
-This setup should provide a comprehensive tutorial on deploying a basic ERC20 token contract on the IoTeX blockchain using HardHat. Make sure to replace `YOUR_PRIVATE_KEY` with your actual development account's private key.&#x20;
+This setup should provide a comprehensive tutorial on deploying a basic ERC20 token contract on the IoTeX blockchain using HardHat.&#x20;
 
 ## Deploy using Foundry
 

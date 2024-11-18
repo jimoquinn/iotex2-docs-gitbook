@@ -1,16 +1,20 @@
-# Deploy the Device NFT
+# Bind your Device NFT
 
-To integrate a DePIN project with the IoTeX ioID module, the project owner starts by deploying "**Device NFT**" contract to tokenize each device within their project, unless such contract already exist.&#x20;
+{% hint style="warning" %}
+Ensure you have already registered a Project ID&#x20;
 
-{% hint style="info" %}
-While the contract is required to implement the ERC-721, the ioID framework does not impose specific implementation requirements, allowing for project-specific customization.&#x20;
+[↗ Register a DePIN Project](register-a-depin-project.md)
 {% endhint %}
 
-Such NFT contract will be linked to your Project ID and only users who own a valid device NFT for a DePIN project are entitled to register a new ioID identity for a physical device and bind it to their blockchain wallet.&#x20;
+After registering a DePIN project, the next step is to set the _Device NFT_ contract for that project. This contract must be set before any user attempts to register a device ioID for your project.
+
+{% hint style="info" %}
+While the Device NFT contract is required to implement the ERC-721, the ioID framework does not impose specific implementation requirements, allowing for project-specific customization.&#x20;
+{% endhint %}
+
+Your Device NFT contract must be linked to your Project ID and only users who own a valid device NFT for a DePIN project are entitled to register a new ioID identity for a physical device for that project and bind it to their blockchain wallet.&#x20;
 
 While the Device token contract could be a plain NFT721, below is an example for a typical customization that can be used as a Device NFT by a DePIN project.
-
-
 
 <details>
 
@@ -72,5 +76,24 @@ contract DeviceNFT is ERC721, Ownable {
 </details>
 
 {% hint style="info" %}
-[Learn how to deploy an NFT token contract on IoTeX](../../../../builders/defi/deploy-tokens/deploy-an-nft-token.md)
+[Learn how to deploy an NFT token contract on IoTeX](../../../builders/defi/deploy-tokens/deploy-an-nft-token.md)
 {% endhint %}
+
+## Bind the Device NFT using IoTeX CLI (`ioctl`)
+
+```
+ioctl ioid device -p [PROJECT_ID] [DEVICE_NFT_CONTRACT_ADDRESS]
+```
+
+## Contract Call
+
+**Contarct:** ioIDStore
+
+**Function Call:** `setDeviceContract(uint256 _projectId, address _contract) external`
+
+**Example:**
+
+```solidity
+let tx = await ioIDStore.setDeviceContract(41, "0x9876543210abcdef9876543210abcdef98765432");
+```
+

@@ -2,6 +2,10 @@
 
 After binding a Device NFT contract to a DePIN project and requesting a specific number of ioIDs for the project, physical devices can be registered in the ioIDRegistry contract, effectively "_activating_" the ioID.&#x20;
 
+{% hint style="info" %}
+[→ Jump to the hands-on tutorial](../../ioconnect-hardware-sdk/build-with-ioconnect/)
+{% endhint %}
+
 This activation process must be carried out by the device owner and involves minting an ioID NFT to the device owner's account. During the minting process the ioID is associated with a specific Device NFT token, where the device's DID (Decentralized Identifier) serves as the token's ID.&#x20;
 
 ## Contract Call
@@ -37,6 +41,5 @@ const tx = await ioIDRegistry.register(deviceContract, tokenId, device, hash, ur
         
 ```
 
-{% hint style="info" %}
-[→ Learn more about how to implement device registration in your devices ](../../ioconnect-hardware-sdk/build-with-ioconnect/)
-{% endhint %}
+Please refer to this code to clarify the meaning of the method call arguments:
+

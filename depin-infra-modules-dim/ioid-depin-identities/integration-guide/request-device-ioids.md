@@ -1,6 +1,6 @@
-# 2. Reserve Device ioIDs
+# Reserve Device ioIDs
 
-DePIN projects must **reserve** a specific number of ioIDs by paying the required amount before they can register their devices on IoTeX. ioIDs can only be reserved by DePIN projects **registered** on IoTeX, so please ensure that your project is registered and you own the `Project ID` before continuing.
+DePIN projects must **reserve** a specific number of ioIDs by paying the required amount before they can register their devices on IoTeX. ioIDs can only be reserved by DePIN projects that are **registered** on IoTeX, so please ensure that your project [is registered](register-a-depin-project.md) and you own the `Project ID` before continuing.
 
 {% hint style="info" %}
 You will pay the required amount to complete the application for the number of ioIDs requested. The current cost on the IoTeX testnet is `0.1 IOTX` per ioID.&#x20;
