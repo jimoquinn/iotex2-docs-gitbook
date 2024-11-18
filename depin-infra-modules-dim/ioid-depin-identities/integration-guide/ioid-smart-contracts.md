@@ -1,4 +1,4 @@
-# ioID Smart contracts
+# ioID Smart contracts quick reference
 
 The ioID suite of smart contracts provides a robust framework for decentralized identity management on the IoTeX blockchain. These contracts collectively provide a robust framework for identity management and interaction within the IoTeX ecosystem.&#x20;
 
@@ -8,7 +8,12 @@ The ioID suite of smart contracts provides a robust framework for decentralized 
 
 Here’s a brief overview of each contract and its main functions.
 
-## DePIN Project Registry
+* [DePIN Projects Registry](ioid-smart-contracts.md#depin-projects-registry)
+* [ioID NFT](ioid-smart-contracts.md#ioid-nft)
+* [ioID Store](ioid-smart-contracts.md#ioid-store)
+* [ioID Registry](ioid-smart-contracts.md#ioid-registry)
+
+## DePIN Projects Registry
 
 **ProjectRegistry.sol**
 
