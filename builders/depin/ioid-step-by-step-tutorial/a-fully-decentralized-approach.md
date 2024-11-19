@@ -1,16 +1,20 @@
 # A fully decentralized approach
 
-This tutorial demonstrates a fully decentralized method for managing the lifecycle of device identity and ownership using ioID. It provides a practical, hands-on guide featuring an ESP32 board but is easily adaptable to a variety of “machines,” including Linux-based boards, smartphones, and desktop computers.
+This tutorial demonstrates a fully decentralized approach to managing the lifecycle of device identity and ownership in DePINs using ioID. This method aligns perfectly with the principles of a true Web3 project, enabling device owners to independently initiate and complete the registration process without relying on centralized cloud services.
+
+The document offers a practical, hands-on guide featuring an ESP32 board, with instructions that can be easily adapted to a variety of other “machines,” including Linux-based boards, smartphones, and desktop computers.
 
 ## 1. Initial setup
 
-Ensure you have completed the steps in the [prerequisites section](./).
+Ensure you have completed the steps in the [prerequisites section](./) to fund an IoTeX developer account.
 
 ## 2. Device NFT Contract
 
 Ensure you deployed an ERC721 NFT contract to "tokenize" your devices
 
-\-> [deploy-an-nft-token.md](../../defi/deploy-tokens/deploy-an-nft-token.md "mention")
+{% hint style="success" %}
+See how to deploy an NFT Token on IoTeX using Hardhat: [deploy-an-nft-token.md](../../defi/deploy-tokens/deploy-an-nft-token.md "mention")
+{% endhint %}
 
 **and note the deployed contract address.**
 
@@ -20,7 +24,11 @@ For a quicker option, you can deploy a standard NFT contract using its bytecode 
 ioctl contract deploy bytecode $(curl -s https://gist.githubusercontent.com/simonerom/fd7427cd821408a5e49f4c4e81b16fb9/raw/device-nft-bytecode.hex)
 ```
 
-We will refer to this contract as the "_Device NFT_".
+We will refer to this contract as the "_Device NFT_" from now on. Let's also export the contract address for convenience:
+
+```bash
+export $DEVICE_NFT=0x...
+```
 
 ## Register your DePIN project on IoTeX
 
@@ -37,7 +45,7 @@ export PROJECT_ID=YOUR_PROJECT_ID
 Bind the Device NFT to your Project ID
 
 ```
-ioctl ioid device <NFT_CONTRACT_ADDRESS> -p $PROJECT_ID
+ioctl ioid device $DEVICE_NFT -p $PROJECT_ID
 ```
 
 ## Integrate ioConnect in your device
@@ -54,9 +62,7 @@ Below is a flowchart illustrating the basic flow common to most use cases. The p
 
 ### Prerequisite
 
-Before proceeding, ensure you have an ESP32 toolchain correctly configured on your system. This is essential for building the code and deploying it to your ESP32 board.
-
-For a step-by-step guide on setting up the ESP32 toolchain with VS Code, refer to the tutorial available in this [DePIN demo repository](https://github.com/iotexproject/dewi-demo/tree/main/esp32#setting-up-your-environment).
+Before proceeding, ensure you have an [ESP32 toolchain correctly configured](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) on your system. This is essential for building the code and deploying it to your ESP32 board. A [VS Code extension](https://github.com/espressif/vscode-esp-idf-extension/tree/master) is also available.
 
 ### Get the ioConnect example
 
@@ -66,21 +72,26 @@ Clone ioConnect and enter the ESP32 examples folder:
 git clone https://github.com/iotexproject/ioConnect && cd ioConnect/example/esp32
 ```
 
-Duplicate the `deviceregister` example and configure your WiFi credential in the configuration:
+Clone the tutorial:
 
-```bash
-cp -r deviceregister tutorial && tutorial
-# make sure your ESP-IDF is configured 
-idf.py fullclean
-idf.py menuconfig
-# Configure SSID & Password in Example Configuration
+```
+git clone https://github.com/iotexproject/ioid-tutorial && cd tutorial
 ```
 
-<figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+### Build the demo
 
-### Write the code
-
-{% hint style="warning" %}
-This document is a work in progress, please check back later.
-{% endhint %}
+```bash
+# make sure your ESP-IDF is configured 
+get_idf
+# Set the target chip according to your board
+idf.py set-target esp32
+# Clean
+idf.py fullclean
+# Configure SSID & Password in Example Configuration
+idf.py menuconfig
+# Build
+idf.py build
+# Connect your board and flash (replace the correct serial port)
+idf.py -p /dev/tty.usbserial-110 flash monitor
+```
 
