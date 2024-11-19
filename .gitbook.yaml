@@ -2,4 +2,4 @@ root: ./
 
 redirects:
   the-iotex-stack/basic-concepts/address-conversion: builders/reference-docs/native-iotex-development/address-conversion.md
-  developer/smart-contracts/issue-tokens.html: builders/defi/deploy-tokens.md
+  developer/smart-contracts/issue-tokens: builders/defi/deploy-tokens.md
