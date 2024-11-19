@@ -58,9 +58,26 @@ Before proceeding, ensure you have an ESP32 toolchain correctly configured on yo
 
 For a step-by-step guide on setting up the ESP32 toolchain with VS Code, refer to the tutorial available in this [DePIN demo repository](https://github.com/iotexproject/dewi-demo/tree/main/esp32#setting-up-your-environment).
 
-### Get ioConnect examples
+### Get the ioConnect example
+
+Clone ioConnect and enter the ESP32 examples folder:
 
 ```bash
-git clone https://github.com/iotexproject/ioConnect && ioConnect
+git clone https://github.com/iotexproject/ioConnect && cd ioConnect/example/esp32
 ```
 
+Duplicate the `deviceregister` example and configure your WiFi credential in the configuration:
+
+```bash
+cp -r deviceregister tutorial && tutorial
+# make sure your ESP-IDF is configured 
+idf.py fullclean
+idf.py menuconfig
+# Configure SSID & Password in Example Configuration
+```
+
+<figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+
+### Write the code
+
+Open&#x20;
