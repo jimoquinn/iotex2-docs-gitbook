@@ -80,4 +80,7 @@ idf.py menuconfig
 
 ### Write the code
 
-Open&#x20;
+{% hint style="warning" %}
+This document is a work in progress, please check back later.
+{% endhint %}
+
