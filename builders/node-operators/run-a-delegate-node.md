@@ -13,3 +13,11 @@ When setting up a full node as a Delegate in the IoTeX network, it's recommended
 Check the dedicated delegate documentation:
 
 {% embed url="https://delegates.iotex.io/" %}
+
+### Delegate Endorsement
+
+**Delegate Endorsement** is a feature that allows aspiring Delegates to participate in IoTeX governance and consensus without meeting the 1.2M IOTX self-stake requirement. By receiving endorsements from stakeholders who stake on their behalf, Delegates can actively contribute to the network, while Endorsers earn rewards and influence governance without managing a node.
+
+Learn more 👇&#x20;
+
+{% embed url="https://delegates.iotex.io/get-started/delegate-endorsement" %}
