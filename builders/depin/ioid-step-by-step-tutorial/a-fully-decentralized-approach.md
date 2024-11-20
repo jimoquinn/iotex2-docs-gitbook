@@ -54,9 +54,7 @@ Bind the Device NFT to your Project ID
 ioctl ioid device $DEVICE_NFT -p $PROJECT_ID
 ```
 
-## Integrate ioConnect in your device
-
-## Integrate ioConnect in your device
+## Integrate ioID SDK in your device
 
 In this step, we will use the popular ESP32 board as our DePIN device and create a simple firmware that enables the device to be registered on-chain by the device owner. This demonstrates the integration of ioID-SDK with minimal setup, making it a practical and efficient way to securely connect your DePIN devices to your Dapp on the IoTeX blockchain.
 
