@@ -64,8 +64,6 @@ Below is a flowchart illustrating the basic flow common to most use cases. The p
 
 <figure><img src="../../../.gitbook/assets/Gc21SU2XAAEsSmm.jpeg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
-
 ### Prerequisite
 
 Before proceeding, ensure you have an [ESP32 toolchain correctly configured](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) on your system. This is essential for building the code and deploying it to your ESP32 board. A [VS Code extension](https://github.com/espressif/vscode-esp-idf-extension/tree/master) is also available.
