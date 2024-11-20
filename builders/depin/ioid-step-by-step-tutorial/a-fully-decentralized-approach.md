@@ -4,6 +4,10 @@ This tutorial demonstrates a fully decentralized approach to managing the lifecy
 
 The document offers a practical, hands-on guide featuring an ESP32 board, with instructions that can be easily adapted to a variety of other “machines,” including Linux-based boards, smartphones, and desktop computers.
 
+{% hint style="info" %}
+[-> Source code on GitHub.](https://github.com/iotexproject/depin-tutorials/tree/main/esp32-device-registration)
+{% endhint %}
+
 ## 1. Initial setup
 
 Ensure you have completed the steps in the [prerequisites section](./) to fund an IoTeX developer account.
