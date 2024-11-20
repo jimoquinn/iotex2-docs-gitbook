@@ -12,7 +12,6 @@ Before you begin working with the IoTeX blockchain and related tools, follow the
 Ensure you have the following tools installed:
 
 * [ioctl](https://docs.iotex.io/builders/reference-docs/ioctl-client#install-latest-release-build): For interacting with the IoTeX blockchain.
-* [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html): Required for building the prover code.
 * [curl](https://curl.se/): For sending messages to the API node.
 * [jq](https://jqlang.github.io/jq/): To format JSON output.
 
@@ -20,13 +19,30 @@ Ensure you have the following tools installed:
 
 Start by creating an IoTeX developer wallet and funding it with test tokens.
 
-```
+```bash
 ioctl account createadd devaccount
 ```
 
 Note the `0x` wallet address provided.&#x20;
 
+Set ioctl on the IoTeX testnet:
+
+```bash
+ioctl config set endpoint api.testnet.iotex.one:443
+```
+
 **Claim test IOTX**: You can claim test IOTX tokens on the IoTeX Developer portal at [https://developers.iotex.io/faucet](https://developers.iotex.io/faucet).
 
-Configure Metamask: if you need to configure Metamask with IoTeX for convenience, you can do so on the&#x20;
+**Configure Metamask**: if you need to configure Metamask with IoTeX for convenience, you can do so on the&#x20;
 
+Check the balance of your wallet with:
+
+```bash
+ioctl account balance devaccount
+```
+
+Export the private key with:
+
+```
+ioctl account export devaccount
+```
