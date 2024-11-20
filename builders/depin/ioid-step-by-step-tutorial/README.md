@@ -2,6 +2,9 @@
 
 Depending on the development stage of a DePIN project, there are multiple ways it can integrate ioID. In this section of the documentation, we share different integration flows tailored to various use cases.
 
+1. [A fully decentralized approach](a-fully-decentralized-approach.md)
+2. A "proxy contract" approach&#x20;
+
 Before you begin working with the IoTeX blockchain and related tools, follow these preliminary steps to set up your development environment.
 
 ### Prerequisites
