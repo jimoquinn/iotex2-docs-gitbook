@@ -1,6 +1,6 @@
 # Layered Architecture
 
-As illustrated in the figure below, the ioConnect SDK adopts a layered design and consists of five layers from top to bottom, namely the DIDComm messaging layer, the identity and credential service layer, the cryptographic service layer, the cryptographic primitive layer, and the root of trust layer. It is worth noting that each layer is composed of multiple components, allowing developers to customize the SDK to meet hardware limitations and application requirements.
+As illustrated in the figure below, the ioId-SDK adopts a layered design and consists of five layers from top to bottom, namely the DIDComm messaging layer, the identity and credential service layer, the cryptographic service layer, the cryptographic primitive layer, and the root of trust layer. It is worth noting that each layer is composed of multiple components, allowing developers to customize the SDK to meet hardware limitations and application requirements.
 
 <figure><img src="https://iotex.larksuite.com/space/api/box/stream/download/asynccode/?code=NmYzMDMxNDZhZGExNjgwNDQ3OGIzYjZmODk2ZDZiMDJfNGg5T2RXbmxjd0ZVeUExUmRPSHM5d01vWFNmNEhiU3JfVG9rZW46QklBc2JkOU8wb3RlTmN4WURDYnVKd1l0czc4XzE3MTY1NTg5MTY6MTcxNjU2MjUxNl9WNA" alt=""><figcaption></figcaption></figure>
 

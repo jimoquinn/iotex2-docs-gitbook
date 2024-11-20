@@ -1,6 +1,6 @@
 # Current Development Status
 
-The ioConnect SDK currently supports a number of embedded communities as shown below. In particular, the PSACrypto library (i.e., the southern part of the ioConnect SDK) has been submitted to the [Arduino](https://www.arduinolibraries.info/libraries/psa-crypto) and [ESPRESSIF](https://components.espressif.com/components?q=iotex) communities and passed their component approval processes.
+The ioId-SDK currently supports a number of embedded communities as shown below. In particular, the PSACrypto library (i.e., the southern part of the ioId-SDK) has been submitted to the [Arduino](https://www.arduinolibraries.info/libraries/psa-crypto) and [ESPRESSIF](https://components.espressif.com/components?q=iotex) communities and passed their component approval processes.
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
