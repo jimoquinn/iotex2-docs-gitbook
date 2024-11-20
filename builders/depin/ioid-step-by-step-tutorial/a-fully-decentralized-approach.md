@@ -52,9 +52,9 @@ Bind the Device NFT to your Project ID
 ioctl ioid device $DEVICE_NFT -p $PROJECT_ID
 ```
 
-## Integrate ioConnect in your device
+## Integrate ioId-SDK in your device
 
-In this step, we will use the popular ESP32 board as our DePIN device and create a simple firmware that enables the device to be registered on-chain by the device owner. This demonstrates the integration of ioConnect with minimal setup, making it a practical and efficient way to securely connect your DePIN devices to your Dapp on the IoTeX blockchain.
+In this step, we will use the popular ESP32 board as our DePIN device and create a simple firmware that enables the device to be registered on-chain by the device owner. This demonstrates the integration of ioID-SDK with minimal setup, making it a practical and efficient way to securely connect your DePIN devices to your Dapp on the IoTeX blockchain.
 
 {% hint style="info" %}
 Below is a flowchart illustrating the basic flow common to most use cases. The process ensures proper device registration at boot and, during normal operation, the device utilizes its DID key to sign messages securely.
@@ -68,12 +68,12 @@ Below is a flowchart illustrating the basic flow common to most use cases. The p
 
 Before proceeding, ensure you have an [ESP32 toolchain correctly configured](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) on your system. This is essential for building the code and deploying it to your ESP32 board. A [VS Code extension](https://github.com/espressif/vscode-esp-idf-extension/tree/master) is also available.
 
-### Get the ioConnect example
+### Get the ioID-SDK example
 
-Clone ioConnect and enter the ESP32 examples folder:
+Clone ioID-SDK and enter the ESP32 examples folder:
 
 ```bash
-git clone https://github.com/iotexproject/ioConnect && cd ioConnect/example/esp32
+git clone https://github.com/iotexproject/ioID-SDK && cd ioID-SDK/example/esp32
 ```
 
 Clone the tutorial:
