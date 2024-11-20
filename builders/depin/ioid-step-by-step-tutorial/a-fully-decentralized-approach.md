@@ -60,9 +60,7 @@ In this step, we will use the popular ESP32 board as our DePIN device and create
 Below is a flowchart illustrating the basic flow common to most use cases. The process ensures proper device registration at boot and, during normal operation, the device utilizes its DID key to sign messages securely.
 {% endhint %}
 
-
-
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Basic firmware flow for ioID integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Gc21SU2XAAEsSmm.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Prerequisite
 
