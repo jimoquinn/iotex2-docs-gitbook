@@ -99,18 +99,72 @@ idf.py build
 idf.py -p /dev/tty.usbserial-110 flash monitor
 ```
 
-### Test the device
+### Testing the Firmware
 
-Check the device assigned IP addres from the terminal and open a Chrome-based browser. Type the following url:
+In this demo, the firmware is designed to accept HTTPS connections from a client and respond to a request to sign an ioID registration message that the client will utilize to call the ioID registration contract (ref. [ioID Registry Contract](https://github.com/iotexproject/ioID-contracts/blob/25841427d2ed8506c577fa02858e75047a6ab840/contracts/ioIDRegistry.sol#L108)).&#x20;
+
+{% hint style="success" %}
+In other scenarios, the device might communicate via Bluetooth or simply request the owner’s address to perform on-chain registration directly.
+{% endhint %}
+
+To test the device:
+
+**1. Find the Device’s IP Address:**
+
+Check the terminal output to find the IP address assigned to the device.
+
+**2. Open a Browser:**
+
+Use a Chrome-based browser and navigate to the following URL:
 
 ```
 https://YOUR_DEVCE_IP:8000/did
 ```
 
-Accept the security warning (the demo firmware skips https certificates, but you should provide a valid certificate in the firmware). You should see some DID information returned by the firmware:
+Replace YOUR\_DEVICE\_IP with the actual IP address of the device.&#x20;
 
+**3. Handle Security Warning:**
 
+Accept the browser’s security warning. (The demo firmware does not provide a valid HTTPS certificate; however, in a production environment, you should use a valid certificate.)
 
-### A closer look to the code
+**4. Verify the Response:**
 
-WIP
+The firmware should return some DID (Decentralized Identifier) information in response to the request:
+
+<figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+
+The device is now ready to be registered. While any DePIN project can provide their own client to perform the actual registration, here are some tools that work with the current communication protocol implemented in this demo:
+
+1. **The IoTeX Hub Portal:** https://hub.iotex.io/my-devices - Please notice that this is being developed at this moment.
+2. **An example command line tool community-developed using NodeJS**: [https://github.com/simonerom/ioid-registration-js](https://github.com/simonerom/ioid-registration-js)
+
+### A closer look at the code
+
+{% embed url="https://github.com/iotexproject/depin-tutorials/blob/main/esp32-device-registration/main/main.c" %}
+
+```c
+void app_main(void)
+{
+...
+    // Generate or retrieve the DID
+    did_generate();
+    const char *stored_did = did_get();
+    // Extract the device address from the DID
+    const char *device_address = stored_did + 7; // Skip "did:io:"
+    // Check if this device is already registered
+    bool registered = is_device_registered(device_address);    
+    if (!registered) {
+        ESP_LOGI(TAG, "Device not registered. Starting registration process...");
+        did_register_start();
+        // Halt the program until the user reboots the device
+        while (1) { vTaskDelay(pdMS_TO_TICKS(1000)); }
+    } else {
+        // Normal device behavior here
+        ESP_LOGI(TAG, "Device already registered.");
+        // Perform some work
+        // Generate a data message
+        // Sign it with the ioID SDK
+        // Send the message to the DEPIN project's data endpoint
+    }
+```
+
