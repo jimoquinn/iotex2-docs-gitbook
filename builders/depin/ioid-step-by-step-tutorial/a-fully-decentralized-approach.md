@@ -73,25 +73,25 @@ Before proceeding, ensure you have an [ESP32 toolchain correctly configured](htt
 Clone ioID-SDK and enter the ESP32 examples folder:
 
 ```bash
-git clone https://github.com/iotexproject/ioID-SDK && cd ioID-SDK/example/esp32
+git clone https://github.com/iotexproject/ioID-SDK && cd ioID-SDK/example
 ```
 
 Clone the tutorial:
 
 ```
-git clone https://github.com/iotexproject/ioid-tutorial && cd tutorial
+git clone https://github.com/iotexproject/depin-tutorials && cd depin-tutorials
 ```
 
 ### Build the demo
 
 ```bash
 # make sure your ESP-IDF is configured 
-get_idf
+. $HOME/esp/esp-idf/export.sh
 # Set the target chip according to your board
 idf.py set-target esp32
 # Clean
 idf.py fullclean
-# Configure SSID & Password in Example Configuration
+# Configure SSID & Password in [Example Configuration]
 idf.py menuconfig
 # Build
 idf.py build
@@ -99,3 +99,18 @@ idf.py build
 idf.py -p /dev/tty.usbserial-110 flash monitor
 ```
 
+### Test the device
+
+Check the device assigned IP addres from the terminal and open a Chrome-based browser. Type the following url:
+
+```
+https://YOUR_DEVCE_IP:8000/did
+```
+
+Accept the security warning (the demo firmware skips https certificates, but you should provide a valid certificate in the firmware). You should see some DID information returned by the firmware:
+
+
+
+### A closer look to the code
+
+WIP
