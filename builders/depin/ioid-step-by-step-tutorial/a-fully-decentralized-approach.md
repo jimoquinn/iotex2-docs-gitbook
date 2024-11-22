@@ -145,7 +145,7 @@ Please notice that this section of the IoTeX Hub portal under development and ca
 
 2. **An example command line tool community-developed using NodeJS**: [https://github.com/simonerom/ioid-registration-js](https://github.com/simonerom/ioid-registration-js)
 
-### A closer look at the code
+## A closer look at the device code
 
 {% embed url="https://github.com/iotexproject/depin-tutorials/blob/main/esp32-device-registration/main/main.c" %}
 
