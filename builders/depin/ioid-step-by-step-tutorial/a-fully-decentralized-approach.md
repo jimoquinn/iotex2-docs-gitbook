@@ -8,52 +8,6 @@ The document offers a practical, hands-on guide featuring an ESP32 board, with i
 [-> Source code on GitHub.](https://github.com/iotexproject/depin-tutorials/tree/main/esp32-device-registration)
 {% endhint %}
 
-## 1. Initial DePIN Project Setup
-
-Ensure you have completed the steps in the [prerequisites section](./) to fund an IoTeX developer account.
-
-### 2. Device NFT Contract
-
-Ensure you deployed an ERC721 NFT contract to "tokenize" your devices
-
-{% hint style="success" %}
-See how to deploy an NFT Token on IoTeX using Hardhat: [deploy-an-nft-token.md](../../defi/deploy-tokens/deploy-an-nft-token.md "mention")
-{% endhint %}
-
-**and note the deployed contract address.**
-
-For a quicker option, you can deploy a standard NFT contract using its bytecode with the following ioctl command:
-
-```bash
-ioctl contract deploy bytecode $(curl -s https://gist.githubusercontent.com/simonerom/fd7427cd821408a5e49f4c4e81b16fb9/raw/device-nft-bytecode.hex)
-```
-
-Check the transaction link to find the address of the contract just deployed.
-
-We will refer to this contract as the "_Device NFT_" from now on. Let's also export the contract address for convenience:
-
-```bash
-export DEVICE_NFT=0x...
-```
-
-### Register your project on IoTeX
-
-```bash
-ioctl ioid register "MY_COOL_DEPIN_PROJECT_NAME"
-```
-
-Take note of your `Project ID` and set it as an environment variable:
-
-```bash
-export PROJECT_ID=YOUR_PROJECT_ID
-```
-
-Bind the Device NFT to your Project ID
-
-```
-ioctl ioid device $DEVICE_NFT -p $PROJECT_ID
-```
-
 ## Integrate ioID SDK in your device
 
 In this step, we will use the popular ESP32 board as our DePIN device and create a simple firmware that enables the device to be registered on-chain by the device owner. This demonstrates the integration of ioID-SDK with minimal setup, making it a practical and efficient way to securely connect your DePIN devices to your Dapp on the IoTeX blockchain.
