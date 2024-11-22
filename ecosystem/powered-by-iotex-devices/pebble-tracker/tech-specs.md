@@ -26,7 +26,7 @@ Pebble combines an **environmental sensor** (temperature, relative humidity, bar
 
 ### Network Connectivity <a href="#network-connectivity" id="network-connectivity"></a>
 
-Pebble includes a Multimode LTE-M/NB-IoT modem for cellular communication. To have your Pebble connected to the Internet you will need an _I_oT-enabled\*\* SIM card that supports either NB-IoT or LTE standards.
+Pebble includes a Multimode LTE-M/NB-IoT modem for cellular communication. To have your Pebble connected to the Internet you will need an _&#x49;_&#x6F;T-enabled\*\* SIM card that supports either NB-IoT or LTE standards.
 
 ### Data format <a href="#data-format" id="data-format"></a>
 

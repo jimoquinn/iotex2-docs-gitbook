@@ -2,11 +2,9 @@
 
 ## Quick Start
 
+Congratulations on receiving your **Pebble Tracker**.
 
-
-Congratulations on receiving your Pebble Tracker!
-
-This quick start guide will help you with power on your device and connect it to the IoTeX [MachineFi portal](https://portal.machinefi.com/).
+This guide will help you quickly register it on the IoTeX blockchain and get started with using it.
 
 ## Unboxing
 
@@ -16,7 +14,7 @@ Before turning on Pebble Tracker, let's take a look at what's in the box:
 
 ## Finding a SIM Card
 
-Pebble Tracker connectivity is based on the new [_Narrowband-IoT_](https://en.wikipedia.org/wiki/Narrowband\_IoT) cellular technology, which provides radio bands that are optimized for Internet of Things applications like smart metering, industrial controls, residential security, etc.
+Pebble Tracker connectivity is based on the new [_Narrowband-IoT_](https://en.wikipedia.org/wiki/Narrowband_IoT) cellular technology, which provides radio bands that are optimized for Internet of Things applications like smart metering, industrial controls, residential security, etc.
 
 {% hint style="info" %}
 **The SIM card is not included with Pebble Tracker**
@@ -57,9 +55,9 @@ Press and keep pressing the **power**/**confirm** button on the right side of Pe
 
 If this Pebble Tracker has not been registered yet, it will prompt you for starting the device registration process that will add it to your MachineFi portal account:
 
-<figure><img src="https://github.com/iotexproject/iotex-docs-gitbook/raw/master/.gitbook/assets/poweron%20(2).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Press the Power/Confirm button once, to start the registration process on the Pebble side:
+Press the **Power/Confirm** button once, to start the registration process on the Pebble side:
 
 <figure><img src="https://github.com/iotexproject/iotex-docs-gitbook/raw/master/.gitbook/assets/pebble-reg2.jpg" alt=""><figcaption></figcaption></figure>
 

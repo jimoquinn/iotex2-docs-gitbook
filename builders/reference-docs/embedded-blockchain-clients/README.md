@@ -6,7 +6,7 @@ The blockchain client SDK is targeted to embedded devices and allows you to easi
 
 ## How does it work
 
-The communication with the blockchain is done over HTTP**,** using the HTTP to JSON-RPC bridge at **gateway.iotexlab.io.**
+The communication with the blockchain is done over HTT&#x50;**,** using the HTTP to JSON-RPC bridge at **gateway.iotexlab.io.**
 
 ## Supported devices
 

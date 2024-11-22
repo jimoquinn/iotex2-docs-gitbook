@@ -12,7 +12,7 @@ Welcome to our guide on sending and receiving IOTX tokens. This guide is designe
 Before withdrawing IOTX from the exchange, ensure that
 
 * you have a [compatible wallet](../supported-wallet-apps/).
-* your wallet is [set on the IoTeX Network](https://app.gitbook.com/o/-MQ9LhchTp7\_QJr-AYG0/s/-MUPHwAAaa4\_zIrX70rA/\~/changes/317/main-doc/using-iotex/getting-started/metamask/\~/page#switching-between-networks).
+* your wallet is [set on the IoTeX Network](https://app.gitbook.com/o/-MQ9LhchTp7_QJr-AYG0/s/-MUPHwAAaa4_zIrX70rA/~/changes/317/main-doc/using-iotex/getting-started/metamask/~/page#switching-between-networks).
 {% endhint %}
 
 1. Log into your exchange account&#x20;
@@ -33,7 +33,7 @@ Some exchanges, when withdrawing to the IoTeX network, expect you to input the r
 
 1. Log into your exchange account and obtain the deposit address for `IOTX`.
 2. Make sure your exchange accepts IOTX deposits on the IoTeX Network for that deposit address.
-3. Initiating the Transfer**:**
+3. Initiating the Transfe&#x72;**:**
    * Open your personal wallet (Metamask, ioPay, etc.).
    * Ensure you've [selected the IoTeX Network](broken-reference)
    * Select your IoTeX wallet and click "Send".
@@ -63,7 +63,7 @@ Some exchanges, like [Coinbase.com](https://coinbase.com), currently supports IO
 
 <summary>🔄 Swap IOTX on Ethereum with Native IOTX</summary>
 
-[Go to the IOTX swap guide -> ](https://app.gitbook.com/o/-MQ9LhchTp7\_QJr-AYG0/s/-MUPHwAAaa4\_zIrX70rA/\~/changes/317/main-doc/using-iotex/bridging-your-tokens/swapping-iotx-tokens/\~/page)
+[Go to the IOTX swap guide -> ](https://app.gitbook.com/o/-MQ9LhchTp7_QJr-AYG0/s/-MUPHwAAaa4_zIrX70rA/~/changes/317/main-doc/using-iotex/bridging-your-tokens/swapping-iotx-tokens/~/page)
 
 </details>
 

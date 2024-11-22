@@ -202,7 +202,7 @@ Public Key: 04ac93d2fffdf488659c3f58890f6ddc55818d50f884e515aa90b2b1ca1e0fc223f8
 Lists IOTX actions for an account. Outputs pages of 15 actions each, optionally skipping the first `SKIP` actions.&#x20;
 
 {% hint style="warning" %}
-This command is incomplete. It won't list less than 15 actions, and the**`SKIP`** argument must be set such that the output always contains at least 15 actions.
+This command is incomplete. It won't list less than 15 actions, and th&#x65;**`SKIP`** argument must be set such that the output always contains at least 15 actions.
 {% endhint %}
 
 `usage: ioctl account actions (ALIAS|ADDRESS) [SKIP]`
