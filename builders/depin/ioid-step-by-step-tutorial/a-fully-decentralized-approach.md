@@ -133,9 +133,16 @@ The firmware should return some DID (Decentralized Identifier) information in re
 
 <figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
-The device is now ready to be registered. While any DePIN project can provide their own client to perform the actual registration, here are some tools that work with the current communication protocol implemented in this demo:
+## Register the device on IoTeX
 
-1. **The IoTeX Hub Portal:** https://hub.iotex.io/my-devices - Please notice that this is being developed at this moment.
+The device is now ready to be registered. While any DePIN project can provide their own client to perform the actual registration, here are some tools that work with the device communication protocol implemented in this demo:
+
+1. **The IoTeX Hub Portal:** https://hub.iotex.io/my-devices
+
+{% hint style="warning" %}
+Please notice that this section of the IoTeX Hub portal under development and cannot be used at this moment. Please check back later for updates.
+{% endhint %}
+
 2. **An example command line tool community-developed using NodeJS**: [https://github.com/simonerom/ioid-registration-js](https://github.com/simonerom/ioid-registration-js)
 
 ### A closer look at the code
