@@ -8,19 +8,19 @@ This guide will help you quickly register it on the IoTeX blockchain and get sta
 
 ## Unboxing
 
-Before turning on Pebble Tracker, let's take a look at what's in the box:
+Before turning on your Pebble Tracker, let's take a look at what's in the box:
 
 <figure><img src="https://github.com/iotexproject/iotex-docs-gitbook/raw/master/.gitbook/assets/image.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Finding a SIM Card
 
-Pebble Tracker connectivity is based on the new [_Narrowband-IoT_](https://en.wikipedia.org/wiki/Narrowband_IoT) cellular technology, which provides radio bands that are optimized for Internet of Things applications like smart metering, industrial controls, residential security, etc.
+Pebble Tracker connectivity supports both [LTE-M](https://en.wikipedia.org/wiki/LTE-M) and [Narrowband-IoT](https://en.wikipedia.org/wiki/Narrowband_IoT) cellular technologies, which provide radio bands that are optimised for IoT applications like smart metering, industrial controls, residential security, etc.
 
-{% hint style="info" %}
-**The SIM card is not included with Pebble Tracker**
+{% hint style="warning" %}
+**Note:** The SIM card is not included with Pebble Tracker
 {% endhint %}
 
-IoTeX has partnered with [1NCE](https://1nce.com/), an IoT SIM cards provider that covers 100 countries and regions globally, providing a convenient data plan: if your country is covered, you can buy a Pebble-ready SIM card on the dedicated IoTeX "**Autobahn.earth**" portal:
+IoTeX has partnered with [1NCE](https://1nce.com/), an IoT SIM cards provider that covers over 100 countries and regions globally, providing a convenient data plan: if your country is covered, you can buy a Pebble-ready SIM card on the dedicated IoTeX "**Autobahn.earth**" portal:
 
 {% embed url="https://autobahn.earth/" %}
 
@@ -49,11 +49,24 @@ Once you have a SIM card, use a paperclip or the provided SIM card tool to open 
 
 <figure><img src="https://github.com/iotexproject/iotex-docs-gitbook/raw/master/.gitbook/assets/simcard.jpg" alt=""><figcaption></figcaption></figure>
 
-## Powering On
+## Turn On Your Pebble Tracker
 
-Press and keep pressing the **power**/**confirm** button on the right side of Pebble until you see the IoTeX logo on the screen. Wait until the cellular connection is established and Pebble Tracker starts communicating with the IoTeX Real-world Data Oracle network.
+* Press and hold the **power/confirm** button located on the right side of the Pebble Tracker.&#x20;
+* Continue holding until the IoTeX logo appears on the screen.
 
-If this Pebble Tracker has not been registered yet, it will prompt you for starting the device registration process that will add it to your MachineFi portal account:
+## Check the Software Version
+
+* Once the device is powered on, **check the software version** displayed on the screen.
+
+<figure><img src="../../../.gitbook/assets/image (128).png" alt=""><figcaption><p>Check if your Pebble Software version is at least v2.0.0</p></figcaption></figure>
+
+{% hint style="warning" %}
+If your Pebble Software version is **`v1.0.x`**, please update your firmware to `v2.0` before continuing → [firmware-update-from-v1-to-v2.md](firmware-update/firmware-update-from-v1-to-v2.md "mention")&#x20;
+{% endhint %}
+
+## Start the Registration
+
+Wait for the Pebble Tracker to establish a cellular connection and begin communicating with the network. You will then be prompted to initiate the registration process, which will link the device to your IoTeX wallet as its owner.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
