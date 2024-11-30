@@ -10,7 +10,7 @@ Opening the **Info Menu** on your Pebble Tracker will give you access to the IME
 
 ### 1. Install PebbleUSBTools
 
-Make sure you installed the required driver and PebbleUSBTool by following the section "**Install and run Pebble USB tools" in** [#offline-firmware-upgrade](firmware-update/#offline-firmware-upgrade "mention")
+Make sure you installed the required driver and PebbleUSBTool by following the section "**Install and run Pebble USB tools" in** [#offline-firmware-upgrade](firmware-update.md#offline-firmware-upgrade "mention")
 
 ### 2. Access the Info menu in your Pebble Tracker&#x20;
 
@@ -25,4 +25,4 @@ Check out the video in the previous section for a visual guidance:
 
 Inside the Pebble USB tool, wait for the status bar to show the "_Pebble Connected"_ message and then click "**Fetch PubKey**"
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
