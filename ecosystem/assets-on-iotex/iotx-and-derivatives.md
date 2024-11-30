@@ -10,7 +10,7 @@ This is an ERC20 wrapped version of the native IOTX token intended to facilitate
 
 This is an ERC20 wrapped version of the native IOTX token on other blockchains. It's intended to facilitate bridging IOTX using iotube. If needed, users can exchange CIOTX for IOTX 1:1 on iotube.
 
-<table><thead><tr><th width="438">Contract</th><th>Links</th></tr></thead><tbody><tr><td><a href="https://iotexscan.io/token/0x99b2b0efb56e62e36960c20cd5ca8ec6abd5557a">0x99b2b0efb56e62e36960c20cd5ca8ec6abd5557a</a></td><td><a href="https://bridge.iotex.io/convert">→ Wrap / Unwrap on iotube</a> </td></tr></tbody></table>
+<table><thead><tr><th width="438">Contract</th><th>Links</th></tr></thead><tbody><tr><td><a href="https://iotexscan.io/token/0x99b2b0efb56e62e36960c20cd5ca8ec6abd5557a">0x99b2b0efb56e62e36960c20cd5ca8ec6abd5557a</a></td><td><a href="https://bridge.iotex.io/convert">Wrap / Unwrap on iotube</a></td></tr></tbody></table>
 
 ## uniIOTX
 
