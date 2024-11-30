@@ -102,6 +102,11 @@
 
 ## Ecosystem
 
+* [Assets on IoTeX](ecosystem/assets-on-iotex/README.md)
+  * [Mainstream Assets](ecosystem/assets-on-iotex/mainstream-assets.md)
+  * [IOTX and Derivatives](ecosystem/assets-on-iotex/iotx-and-derivatives.md)
+  * [DePIN Tokens](ecosystem/assets-on-iotex/depin-tokens.md)
+  * [MEME Coins](ecosystem/assets-on-iotex/meme-coins.md)
 * [iotube Bridge](ecosystem/iotube-bridge.md)
 * [iotexscan Explorer](ecosystem/iotexscan-explorer.md)
 * [Ecosystem Apps](ecosystem/ecosystem-apps/README.md)
