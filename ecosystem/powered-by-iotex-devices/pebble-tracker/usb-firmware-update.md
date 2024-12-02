@@ -54,7 +54,7 @@ You can easily upgrade the firmware of your Pebble Tracker offline by following 
 * **Wait for the red led to light** on then release the power button: Pebble is now in USB firmware update mode
 
 {% hint style="warning" %}
-Please note that will have about 20 seconds to perform the update step or the device will auto-restart if no action is taken.
+Please note that will have about 20 seconds to perform the update step before the device will reboot if no action is taken.
 {% endhint %}
 
 * **Wait for Pebble Connection** In the Pebble USB Tool, watch for the status bar to confirm that your Pebble Tracker is connected. Once it indicates a successful connection, you can proceed with flashing the firmware:
@@ -68,6 +68,5 @@ Please note that will have about 20 seconds to perform the update step or the de
 The device will automatically reboot once the operation is complete, loading the new firmware successfully.
 
 {% hint style="success" %}
-If this is a brand new, unregistered Pebble Tracker, you may want to go back to the the [#device-registration](quick-start.md#device-registration "mention") section of the Quick Start guide.
+If you just upgraded from Pebble Software version `1.0.x` to `2.0`  please complete the migration by following the [device-registration.md](device-registration.md "mention") guide.
 {% endhint %}
-

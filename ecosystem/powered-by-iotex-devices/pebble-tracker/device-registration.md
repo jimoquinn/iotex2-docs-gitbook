@@ -60,8 +60,16 @@ See the previous[#id-2.-run-the-pebble-registration-tool](device-registration.md
 ## Congrats!
 
 Your Pebble Tracker is now successfully registered on the IoTeX blockchain and linked to your wallet as the device owner.
+{% endhint %}
 
+Your Pebble is now ready to send trusted IoT data to IoTeX DApps and support the creation of verifiable DePIN (Decentralized Physical Infrastructure) projects, leveraging user data contribution like location, weather data, movement, light, etc!
 
+Here is what your Pebble screen should look like:
 
+<figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+
+By default, the factory configuration will collect all Pebble sensors data, and send one data message every 5 minutes to IoTeX Dapps.
+
+{% hint style="success" %}
 Stay tuned for upcoming updates and new Pebble Tracker features on the IoTeX Hub Portal!
 {% endhint %}
