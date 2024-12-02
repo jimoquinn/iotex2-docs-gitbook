@@ -2,4 +2,5 @@ root: ./
 
 redirects:
   the-iotex-stack/basic-concepts/address-conversion: builders/reference-docs/native-iotex-development/address-conversion.md
+  verifiable-data/pebble-tracker/quick-start: ecosystem/powered-by-iotex-devices/pebble-tracker/quick-start.md
   developer/smart-contracts/issue-tokens: builders/defi/deploy-tokens.md
