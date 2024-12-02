@@ -10,7 +10,7 @@ The setup includes the following services:
 * A Postgres DB as the Data Availability service
 * A W3bstream coordinator and a prover as a single-node W3bstream configuration
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Tech Stack for W3bstream Development</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Tech Stack for W3bstream Development</p></figcaption></figure>
 
 ## Download demo provers
 

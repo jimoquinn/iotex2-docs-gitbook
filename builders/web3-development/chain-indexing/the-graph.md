@@ -20,7 +20,7 @@ You can copy the command above directly from your subgraph page to include your 
 
 You’ll be prompted to provide some info on your subgraph, make sure you select **`ethereum`** as the protocol, and **`iotex`** as the network:
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Simply have your contract verified on the block explorer and the CLI will automatically obtain the ABI and set up your subgraph. The default settings will generate an entity for each event.
 
