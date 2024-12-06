@@ -100,6 +100,12 @@ Bind the Device NFT to your Project ID
 ioctl ioid device $DEVICE_NFT -p $PROJECT_ID
 ```
 
+Reserve a few ioID for your project (10 in the example command below):
+
+```
+ioctl ioid apply -p $PROJECT_ID -a 10
+```
+
 ## 2. Device registration
 
 Depending on the development stage of a DePIN project, there are multiple ways it can integrate ioID for device registration. In the next pages, we share different flows tailored to various use cases.

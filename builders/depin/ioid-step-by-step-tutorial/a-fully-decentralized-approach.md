@@ -46,6 +46,7 @@ idf.py set-target esp32
 # Clean
 idf.py fullclean
 # Configure SSID & Password in [Example Configuration]
+# Enable ESP HTTPS server in [Component Config]
 idf.py menuconfig
 # Build
 idf.py build
