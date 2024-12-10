@@ -39,6 +39,7 @@
         * [Use with Metamask](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/ledger-nano-s-and-x/use-with-metamask.md)
         * [Use with Rabby Walet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/ledger-nano-s-and-x/use-with-rabbit-walet.md)
         * [Use with IoTeX Hub Portal](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/ledger-nano-s-and-x/use-with-iopay-desktop.md)
+        * [Migrate to the Ethereum Ledger App](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/supported-wallet-apps/ledger-nano-s-and-x/migrate-to-the-ethereum-ledger-app.md)
     * [Buy IOTX Tokens](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/buy-iotx-tokens.md)
     * [Execute Transactions](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/execute-transactions/README.md)
       * [Transfer IOTX Tokens](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/execute-transactions/transfer-iotx-tokens.md)
