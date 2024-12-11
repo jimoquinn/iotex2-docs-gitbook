@@ -148,5 +148,7 @@ Depending on the development stage of a DePIN project, there are multiple ways i
 {% endhint %}
 
 {% hint style="info" %}
-[Integrate ioID in your cloud (a "proxy contract" approach) ](a-proxy-contract-approach.md)[►](https://docs.iotex.io/depin-infra-modules-dim/ioid-depin-identities/integration-guide/bind-the-device-nft#example-device-nft-contract)&#x20;
+Integrate ioID in your cloud (a "proxy contract" approach)&#x20;
+
+_(This guide is being updated and will be published soon)_
 {% endhint %}
