@@ -143,5 +143,10 @@ ioctl ioid apply -p $PROJECT_ID -a 10
 
 Depending on the development stage of a DePIN project, there are multiple ways it can integrate ioID to allow decentralized device identity registration. In the next pages, we share different flows tailored to various use cases.
 
-* [Integrate ioID in the device firmware (a fully decentralized approach) ->](a-fully-decentralized-approach.md)
-* [Integrate ioID in your cloud (a "proxy contract" approach) ->](a-proxy-contract-approach.md)&#x20;
+{% hint style="info" %}
+[Integrate ioID in the device firmware (a fully decentralized approach) ](a-fully-decentralized-approach.md)[►](https://docs.iotex.io/depin-infra-modules-dim/ioid-depin-identities/integration-guide/bind-the-device-nft#example-device-nft-contract)
+{% endhint %}
+
+{% hint style="info" %}
+[Integrate ioID in your cloud (a "proxy contract" approach) ](a-proxy-contract-approach.md)[►](https://docs.iotex.io/depin-infra-modules-dim/ioid-depin-identities/integration-guide/bind-the-device-nft#example-device-nft-contract)&#x20;
+{% endhint %}
