@@ -1,4 +1,8 @@
-# A fully decentralized approach
+---
+description: A fully decentralized approach
+---
+
+# Integrate ioID in the Device Firmware
 
 This tutorial demonstrates a fully decentralized approach to managing the lifecycle of device identity and ownership in DePINs using ioID. This method aligns perfectly with the principles of a true Web3 project, enabling device owners to independently initiate and complete the registration process without relying on centralized cloud services.
 
