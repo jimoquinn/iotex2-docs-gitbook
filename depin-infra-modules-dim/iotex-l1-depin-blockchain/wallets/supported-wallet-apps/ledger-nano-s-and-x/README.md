@@ -13,9 +13,7 @@ This option uses the Ethereum Ledger App, which can be paired with popular Etehr
 {% hint style="info" %}
 **IoTeX App for Ledger**
 
-This involves using the IoTeX Ledger App in conjunction with the [IoTeX Hub Portal](https://hub.iotex.io/assets).&#x20;
-
-⚠︎ Please note that previous IoTeX Desktop Wallet has been phased out.
+This involves using the IoTeX Ledger App in conjunction with the [IoTeX Hub Portal](https://hub.iotex.io/assets) to manage your assets, and on other Dapps websites that support direct browser connection with the IoTeX Ledger App..&#x20;
 {% endhint %}
 
 Depending on the combination of the app on your Ledger key, and the wallet software you're utilizing, here are your available options:
