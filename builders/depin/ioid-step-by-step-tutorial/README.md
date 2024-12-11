@@ -112,7 +112,7 @@ Check the deployment transaction link to find the address of the contract you ju
 We will refer to this contract as the "_Device NFT_" from now on. Let's also export the contract address for convenience:
 
 ```bash
-export DEVICE_NFT_CONTRACT_ADDRESS=0x...
+export DEVICE_NFT=0x...
 ```
 
 ### 1.3 Register your project on IoTeX
