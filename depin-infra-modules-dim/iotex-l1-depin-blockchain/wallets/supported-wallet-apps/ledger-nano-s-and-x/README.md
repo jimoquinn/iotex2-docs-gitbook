@@ -29,6 +29,6 @@ Depending on the combination of the app on your Ledger key, and the wallet softw
 
 Please make sure that:
 
-* [Ledger Live is installed ](https://support.ledger.com/hc/en-us/articles/4404389503889-Getting-started-with-Ledger-Live?docs=true)and ready to use
+* [Ledger Live is installed](https://support.ledger.com/article/4404389606417-zd) and ready to use
 * You have [initialized](https://support.ledgerwallet.com/hc/en-us/articles/360000613793) your Ledger Nano Device
-* The latest Ledger firmware is [installed](https://support.ledgerwallet.com/hc/en-us/articles/360002731113-Update-Ledger-Nano-S-firmware)
+* The latest Ledger firmware is installed
