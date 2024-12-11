@@ -46,6 +46,7 @@
       * [Transfer ERC20 Tokens](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/execute-transactions/transfer-erc20-tokens.md)
       * [Interact with Dapps](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/execute-transactions/interact-with-dapps.md)
       * [Explore transactions](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/execute-transactions/explore-transactions.md)
+    * [Migrate Assets to a different wallet](depin-infra-modules-dim/iotex-l1-depin-blockchain/wallets/migrate-assets-to-a-different-wallet.md)
   * [Staking & Governance](depin-infra-modules-dim/iotex-l1-depin-blockchain/staking-and-governance/README.md)
     * [About IoTeX Staking](depin-infra-modules-dim/iotex-l1-depin-blockchain/staking-and-governance/about-iotex-staking.md)
     * [IoTeX Staking Guide](depin-infra-modules-dim/iotex-l1-depin-blockchain/staking-and-governance/iotex-staking-guide/README.md)
