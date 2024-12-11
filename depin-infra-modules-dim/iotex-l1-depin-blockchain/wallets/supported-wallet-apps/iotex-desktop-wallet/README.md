@@ -6,7 +6,7 @@
 While this wallet remains available for existing users, we highly recommend using MetaMask or your preferred Ethereum wallet for a more up-to-date experience, optionally in conjunction with the [IoTeX Hub Wallet](https://hub.iotex.io).
 
 **Ledger Hardware Support**\
-The IoTeX Ledger App does not support ioPay Desktop anymore. Please refer to [using Ledger with the IoTeX Hub Portal](ledger-nano-s-and-x/use-with-iopay-desktop.md).
+The IoTeX Ledger App does not support ioPay Desktop anymore. Please refer to [using Ledger with the IoTeX Hub Portal](../ledger-nano-s-and-x/use-with-iopay-desktop.md).
 {% endhint %}
 
 ## **Features**
@@ -21,7 +21,7 @@ The IoTeX Ledger App does not support ioPay Desktop anymore. Please refer to [us
 {% hint style="info" %}
 Note that accounts created with the IoTeX Ledger app using the IoTeX Desktop Wallet will not be manageable in third-party Ethereum wallets.&#x20;
 
-Please refer to [migrate-assets-to-a-different-wallet.md](../migrate-assets-to-a-different-wallet.md "mention")
+Please refer to [migrate-assets-to-a-different-wallet.md](../../migrate-assets-to-a-different-wallet.md "mention")
 {% endhint %}
 
 ## **Getting Started**

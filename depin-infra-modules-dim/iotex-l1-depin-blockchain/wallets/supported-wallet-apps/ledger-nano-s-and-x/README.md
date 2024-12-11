@@ -2,9 +2,7 @@
 
 [Ledger Nano S](https://www.ledger.com/products/ledger-nano-s) and [Ledger Nano X](https://shop.ledger.com/pages/ledger-nano-x) are hardware wallets, which are considered very secure for the storage of **private keys** in the blockchain world. When using a hardware wallet like Ledger Nano, your digital assets are safe even when operating on a compromised (or untrusted) PC.
 
-{% hint style="warning" %}
-There are two distinct Ledger Hardware Wallet applications available for managing wallets on the IoTeX Blockchain:
-{% endhint %}
+**IoTeX Options for Ledger Wallet:**
 
 {% hint style="success" %}
 **Ethereum App for Ledger** (_Preferred)_
