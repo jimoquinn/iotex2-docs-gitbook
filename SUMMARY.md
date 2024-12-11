@@ -164,7 +164,7 @@
     * [Staking-Related Contracts](builders/web3-development/evm-precompiled-contracts/staking-related-contracts.md)
 * [Building DePINs](builders/depin/README.md)
   * [ioID Step by Step Tutorial](builders/depin/ioid-step-by-step-tutorial/README.md)
-    * [A fully decentralized approach](builders/depin/ioid-step-by-step-tutorial/a-fully-decentralized-approach.md)
+    * [Integrate ioID in the Device Firmware](builders/depin/ioid-step-by-step-tutorial/a-fully-decentralized-approach.md)
     * [A "Proxy Contract" Approach](builders/depin/ioid-step-by-step-tutorial/a-proxy-contract-approach.md)
   * [Decentralized WiFi Connectivity (DeWi)](builders/depin/end-to-end-dewi-demo/README.md)
     * [Project Specification](builders/depin/end-to-end-dewi-demo/project-specification.md)
