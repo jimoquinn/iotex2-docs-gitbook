@@ -1,4 +1,4 @@
-# Use with IoTeX Hub Portal
+# Use Ledger with IoTeX Hub Portal
 
 Please note that the recommended way to use a Ledger Hardware Wallet with IoTeX is by using the Ethereum Ledger App and pairing it with a Web3 wallet such as [Metamask](use-with-metamask.md) or [Rabby](use-with-rabbit-walet.md).
 
@@ -38,7 +38,7 @@ You may be asked to “_Allow Ledger Manager_” on your device: do so by clicki
 
 In Ledger Live "**Manager"** section, select the “**App Catalog**” tab, find “_IoTeX_” among the apps  and click the “Install” button next to it:
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Follow the instructions in the Ledger Live software and on your device to complete the installation.&#x20;
 
@@ -53,11 +53,11 @@ To connect with your account on the IoTeX Ledger app follow the steps below:
 3. On your Ledger device **open the IoTeX App**&#x20;
 4. In the IoTeX Hub Portal, click the Ledger icon in the top right of the page to connect your Ledger:
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select your Ledger from the browser list of connected devices:
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you connected your Ledger wallet to the IoTeX Hub you'll be able to check your wallet address, balance as well as manage your assets and interact with Dapps available on the Hub Portal:
 
