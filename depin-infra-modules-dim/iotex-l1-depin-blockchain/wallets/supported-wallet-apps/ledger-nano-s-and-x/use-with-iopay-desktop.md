@@ -8,6 +8,8 @@ The option below, is intended specifically for existing users who previously cre
 **See also**: [migrate-to-the-ethereum-ledger-app.md](migrate-to-the-ethereum-ledger-app.md "mention")
 {% endhint %}
 
+{% embed url="https://youtu.be/Fn6zu3XxhrM" %}
+
 ## Install the Ethereum Ledger App on your device
 
 The Ethereum Ledger App is required for the new IoTeX Ledger App to be installed.&#x20;
