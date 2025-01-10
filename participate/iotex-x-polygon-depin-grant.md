@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/20250108-120249.png
+cover: ../.gitbook/assets/20250108-120249.png
 coverY: 22
 ---
 
@@ -9,7 +9,7 @@ Following the announcement of the IoTeX and Polygon's AggLayer integration, our 
 
 #### Grant Overview
 
-As part of this exclusive program, IoTeX will select **2-3 highly promising DePIN projects** to join our ecosystem and leverage our **cutting-edge blockchain infrastructure.** This initiative is designed to fast-track these projects toward their **Token Generation Events (TGEs)** and **mass adoption,** while driving traffic to the Polygon AggLayer once the integration is complete.
+As part of this program, IoTeX will select a handful of **highly promising DePIN projects** to join our ecosystem and leverage our **cutting-edge blockchain infrastructure.** This initiative is designed to fast-track these projects toward their **Token Generation Events (TGEs)** and **mass adoption,** while driving traffic to the Polygon AggLayer once the integration is complete.
 
 #### What We’re Looking For
 
@@ -54,4 +54,4 @@ While participation is **invitation-only,** we are open to learning about except
 
 
 
-{% embed url="https://forms.gle/eYNfDzPKJEqtBm9b8" %}
+{% embed url="https://forms.gle/1UHk9k3q5mVj9fXh6" %}
