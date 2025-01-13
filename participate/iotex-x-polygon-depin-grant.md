@@ -5,11 +5,11 @@ coverY: 22
 
 # IoTeX x Polygon DePIN Grant
 
-Following the announcement of the IoTeX and Polygon's AggLayer integration, our teams have joined forces again for another super exciting venture. This time, IoTeX is joining the **Polygon Grant Allocator program** and will deploy **1M $POL** to accelerate the next wave of **high-potential DePIN projects**, helping them reach mainstream adoption.
+Following the announcement of the IoTeX and AggLayer integration, our teams have joined forces again for another super exciting venture. This time, IoTeX is joining the **Polygon Grant Allocator program** and will deploy **1M $POL** to accelerate the next wave of **high-potential DePIN projects**, helping them reach mainstream adoption.
 
 ### Grant Overview
 
-As part of this program, IoTeX will select a handful of **highly promising DePIN projects** to join our ecosystem and leverage our **cutting-edge blockchain infrastructure.** This initiative is designed to fast-track these projects toward their **Token Generation Events (TGEs)** and **mass adoption,** while driving traffic to the Polygon AggLayer once the integration is complete.
+As part of this program, IoTeX will select a handful of **highly promising DePIN projects** to join our ecosystem and leverage our **cutting-edge blockchain infrastructure.** This initiative is designed to fast-track these projects toward their **Token Generation Events (TGEs)** and **mass adoption,** while driving traffic to the AggLayer once the integration is complete.
 
 ### What We’re Looking For
 
@@ -37,7 +37,7 @@ With these tools, projects can build, scale, and innovate while staying ahead in
 Our mission is to enable DePIN projects to achieve:
 
 * **Accelerated growth and adoption** through access to **Polygon's 1M $POL allocation** and IoTeX’s robust infrastructure.
-* **Mainstream readiness** by integrating IoTeX’s technology stack and leveraging the Polygon AggLayer for cross-chain capabilities.
+* **Mainstream readiness** by integrating IoTeX’s technology stack and leveraging the AggLayer for cross-chain capabilities.
 * Substantial contributions to **IoTeX’s ecosystem** and increased activity on the AggLayer.
 
 ### How to Apply
