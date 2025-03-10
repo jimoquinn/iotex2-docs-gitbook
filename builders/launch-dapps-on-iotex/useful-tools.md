@@ -1,8 +1,8 @@
 # Useful tools
 
-## Disperse
+## Token Distribution
 
-Distribute tokens to multiple addresses
+Tools to Distribute tokens to multiple addresses.
 
 [→ CoinTools Multisender](https://ct.app/multiSender/iotx)
 
