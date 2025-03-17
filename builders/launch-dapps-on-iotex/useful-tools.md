@@ -1,6 +1,6 @@
 # Useful tools
 
-## Token Distribution
+## Tokens Distribution
 
 Tools to Distribute tokens to multiple addresses.
 
