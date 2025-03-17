@@ -115,9 +115,3 @@ Unstaking IOTX involves a few key steps:
 3. **Initiate Unstaking**: After the lock period expires, you can initiate the unstaking process.
 4. **Cooldown Period**: Once you start unstaking, there is a mandatory 3-day cooldown period.
 5. **Withdraw**: After the cooldown period, you can withdraw your IOTX back to your wallet.
-
-### **Stay Informed**
-
-Keep up-to-date with IoTeX news and updates, as changes to the network or staking process can impact your participation.
-
-\[ take more info from the [https://t.iotex.me/voter\_handbook](https://t.iotex.me/voter_handbook) ]
