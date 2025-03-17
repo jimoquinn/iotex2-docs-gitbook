@@ -64,33 +64,43 @@ Opt for this option when your staking deposit aligns with one of the fixed amoun
 
 ## **Decide the amount of IOTX**
 
-{% hint style="info" %}
-There is a minimum staking requirement of 100 IOTX.
-{% endhint %}
+When selecting the amount of IOTX to stake, consider your investment goals and risk tolerance. Here are a few tips:&#x20;
 
-In the next screen, you can select the Decide the amount of IOTX you want to stake.&#x20;
+* **Minimum Stake**: Ensure you stake at least 100 IOTX, as this is the minimum requirement.
+* **Transaction Fees**: Do not try to stake your entire balance: leave some IOTX in your wallet for transaction fees.
 
-&#x20;Please make sure you do not select your entire balance: you should leave a fraction of IOTX (e.g. 0.1 IOTX) out to cover for staking transactions.
+### **Understand the Staking Duration (Lock-up Period)**
 
-<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+The staking duration setting allows you to specify how long you wish to lock your IOTX tokens for staking. Here are some key points to consider when selecting a duration:
 
-### How to select the right amount?
-
-
-
-### **Understand Lock-up Period**
-
-Be aware of any lock-up periods during which you cannot withdraw your staked tokens.
+1. **Short-term vs Long-term**: Shorter durations provide more flexibility but typically offer lower rewards. Longer durations can offer higher rewards but keep in mind that the extra rewards decrease exponentially so it many not be worth locking for very long periods.
+2. **91-day period**: 91 day is a special threshold for the staking duration: when [StakeLock](./#understand-stake-lock) is also enabled, it entitles you to the Burn-Drop rewards that come from DePIN devices registered on the IoTeX blockchain.
+3. **Unstaking**: Once the staking period ends (if [StakeLock is not enabled](./#understand-stake-lock)), your tokens become unlocked. At this point, your tokens remain staked but will no longer earn additional staking rewards because they are no longer locked. You now have the option to unstake, renew your staking period by locking the tokens again, or leave your tokens staked without locking.
+4. **Goal Alignment**: Choose a duration that aligns with your investment goals and liquidity needs.
 
 <figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 ### **Understand Stake-Lock**
 
+StakeLock is a feature that, when enabled, prevents the countdown of your staking duration from progressing. This means that your IOTX tokens remain locked for the specified duration, and the lock period does not decrease until you disable StakeLock. Once disabled, the countdown will begin, and you'll need to wait for the lock period to expire before you can unstake your tokens. It's useful when your staking duration is short and you don't want to keep renewing it manually each time it expires.
+
+{% hint style="warning" %}
+Be careful when enabling StakeLock for long staking durations. If you decide to unstake afterward, you must first disable StakeLock and then wait for the entire lock period to expire before you can unstake your tokens.
+{% endhint %}
+
 <figure><img src="../../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 ### **Earn Rewards**
 
-Staking IOTX earns you rewards, usually distributed automatically to your wallet.
+Staking IOTX earns you rewards, which are typically distributed automatically to the same wallet you used to stake. To easily identify delegates who distribute rewards daily through IoTeX's Hermes service, look for the Hermes wing icon on [stake.iotex.io](https://stake.iotex.io).&#x20;
+
+{% hint style="info" %}
+Note: If you've enabled the **compound** option, your staking rewards will be reinvested into your staking bucket rather than transferred directly to your wallet balance.
+{% endhint %}
+
+When staking for an Hermes Delegate, you can always check your reward distribution transactions on the Hermes website:&#x20;
+
+{% embed url="https://hermes.to" %}
 
 ### **Participate in Governance**
 
@@ -98,10 +108,16 @@ As a staker, you may have the right to participate in IoTeX governance decisions
 
 ### **Unstaking**
 
-If you decide to unstake, follow the platform's process for withdrawing your tokens. Note there is a 3-days "_unbonding period_" before the tokens can be withdrawn. During this period the tokens will not generate rewards.
+Unstaking IOTX involves a few key steps:
+
+1. **Disable StakeLock**: If StakeLock is enabled, you first need to disable it. This will start the countdown of your staking duration, allowing the lock period to expire.
+2. **Wait for Lock Period**: Wait for the lock period to count down to zero.
+3. **Initiate Unstaking**: After the lock period expires, you can initiate the unstaking process.
+4. **Cooldown Period**: Once you start unstaking, there is a mandatory 3-day cooldown period.
+5. **Withdraw**: After the cooldown period, you can withdraw your IOTX back to your wallet.
 
 ### **Stay Informed**
 
 Keep up-to-date with IoTeX news and updates, as changes to the network or staking process can impact your participation.
 
-\[ take more info from the [https://t.iotex.me/voter\_handbook](https://t.iotex.me/voter\_handbook) ]
+\[ take more info from the [https://t.iotex.me/voter\_handbook](https://t.iotex.me/voter_handbook) ]
