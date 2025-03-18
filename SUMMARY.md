@@ -158,6 +158,7 @@
     * [Components of AA](builders/web3-development/account-abstraction/components-of-aa.md)
     * [👩‍💻 Creating new Accounts](builders/web3-development/account-abstraction/creating-new-accounts.md)
     * [👨‍💻 P256Account Example](builders/web3-development/account-abstraction/p256account-example.md)
+  * [Blob Transactions (EIP-4844)](builders/web3-development/blob-transactions-eip-4844.md)
   * [Multicall3](builders/web3-development/multicall3.md)
   * [EVM Precompiled Contracts](builders/web3-development/evm-precompiled-contracts/README.md)
     * [HERMES Delegate Rewards](builders/web3-development/evm-precompiled-contracts/hermes-delegate-rewards.md)
