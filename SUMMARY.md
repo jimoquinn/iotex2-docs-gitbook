@@ -228,6 +228,8 @@
 
 ## Participate
 
+* [Crypto's Got Talent (CGT)](participate/cryptos-got-talent-cgt/README.md)
+  * [IoTeX x Polygon DePIN Grant](participate/cryptos-got-talent-cgt/iotex-x-polygon-depin-grant.md)
 * [Developer Grants](participate/developer-grants/README.md)
   * [General Rules](participate/developer-grants/general-rules.md)
   * [DePIN Submission Ideas](participate/developer-grants/depin-submission-ideas.md)
@@ -243,7 +245,6 @@
     * [DePIN](participate/developer-grants/grant-verticals/depin.md)
     * [NFT / Gaming](participate/developer-grants/grant-verticals/nft-gaming.md)
     * [Infra & Dev Tooling](participate/developer-grants/grant-verticals/infra-and-dev-tooling.md)
-* [IoTeX x Polygon DePIN Grant](participate/iotex-x-polygon-depin-grant.md)
 * [Governance](participate/governance/README.md)
   * [IoTeX Improvement Proposals](participate/governance/iotex-improvement-proposals.md)
   * [The Marshall DAO](participate/governance/the-marshall-dao.md)
