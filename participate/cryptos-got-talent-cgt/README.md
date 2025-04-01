@@ -119,4 +119,5 @@ Gen Pulse, Gargoyle, Axal, and LillyPad
 
 Crypto’s Got Talent is your front-row seat to the future of physical infrastructure on-chain.&#x20;
 
-With a 🎯 curated pipeline of high-potential projects, 📢 unmatched visibility, and a 🔍 transparent selection process, CGT is where real builders meet real adoption. 👉 Check out the full deck →
+With a 🎯 curated pipeline of high-potential projects, 📢 unmatched visibility, and a 🔍 transparent selection process, CGT is where real builders meet real adoption. \
+👉 Check out the [full deck](https://www.figma.com/deck/VGFMky3eg1iGkT3V4eilsa/Crypto%E2%80%99s-got-talent-deck?node-id=3-1300\&t=RsVfOEccv8vRSDpT-0\&scaling=min-zoom\&content-scaling=fixed\&page-id=0%3A1) →&#x20;
