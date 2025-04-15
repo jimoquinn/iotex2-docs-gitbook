@@ -2,7 +2,7 @@
 
 <figure><img src="../../.gitbook/assets/2025-02-28 10.52.15.jpg" alt=""><figcaption></figcaption></figure>
 
-**Crypto’s Got Talent (CGT)** is the first-ever live talent show dedicated to discovering and supporting the most promising builders in the **Decentralized Physical Infrastructure Networks (DePIN)** space. Powered by IoTeX in collaboration with Polygon and ElizaOS, CGT flips the traditional grant model on its head by running the entire selection process **live and in public**—giving projects unparalleled exposure from day one.
+[**Crypto’s Got Talent (CGT)**](https://iotex.io/cryptos-got-talent) is the first-ever live talent show dedicated to discovering and supporting the most promising builders in the **Decentralized Physical Infrastructure Networks (DePIN)** space. Powered by IoTeX in collaboration with Polygon and ElizaOS, CGT flips the traditional grant model on its head by running the entire selection process **live and in public**—giving projects unparalleled exposure from day one.
 
 ### 🎯 Our Mission
 
@@ -120,4 +120,6 @@ Gen Pulse, Gargoyle, Axal, and LillyPad
 Crypto’s Got Talent is your front-row seat to the future of physical infrastructure on-chain.&#x20;
 
 With a 🎯 curated pipeline of high-potential projects, 📢 unmatched visibility, and a 🔍 transparent selection process, CGT is where real builders meet real adoption. \
-👉 Check out the [full deck](https://www.figma.com/deck/VGFMky3eg1iGkT3V4eilsa/Crypto%E2%80%99s-got-talent-deck?node-id=3-1300\&t=RsVfOEccv8vRSDpT-0\&scaling=min-zoom\&content-scaling=fixed\&page-id=0%3A1) →&#x20;
+👉 Check out the full deck below:&#x20;
+
+{% embed url="https://www.figma.com/deck/VGFMky3eg1iGkT3V4eilsa/Crypto%E2%80%99s-got-talent-deck?content-scaling=fixed&node-id=3-1300&page-id=0:1&scaling=min-zoom&t=RsVfOEccv8vRSDpT-0" %}
