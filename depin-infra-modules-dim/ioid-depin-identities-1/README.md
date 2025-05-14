@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # \[ioID] DePIN Identities - Initial Draft
 
 ## Introduction
