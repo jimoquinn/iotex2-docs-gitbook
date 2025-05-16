@@ -2,6 +2,8 @@
 
 ## Device Lifecycle
 
+-> Create a diagram here
+
 ### **1. Project registration**
 
 Create a project account on depinscan.io

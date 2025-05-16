@@ -12,9 +12,9 @@ hidden: true
 
 ### ioID&#x20;
 
-A decentralized identity (DID) assigned to a physical machine. Format:
+A decentralized identity (DID) assigned to a physical machine.&#x20;
 
-did:io:\<identifier>
+Format: `did:io:<identifier>`
 
 ### **DID Document (DID Doc)**
 
