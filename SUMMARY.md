@@ -72,7 +72,6 @@
   * [New Content](depin-infra-modules-dim/ioid-depin-identities-1/new-content.md)
   * [How it Works](depin-infra-modules-dim/ioid-depin-identities-1/how-it-works.md)
   * [API Overview](depin-infra-modules-dim/ioid-depin-identities-1/api-overview.md)
-  * [SDK Integration](depin-infra-modules-dim/ioid-depin-identities-1/sdk-integration.md)
   * [Key Standards](depin-infra-modules-dim/ioid-depin-identities-1/key-standards.md)
 * [\[W3bstream\] DePIN Verification](depin-infra-modules-dim/w3bstream-depin-verification/README.md)
   * [Overview of W3bstream](depin-infra-modules-dim/w3bstream-depin-verification/overview-of-w3bstream.md)

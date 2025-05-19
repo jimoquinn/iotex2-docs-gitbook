@@ -1,6 +1,6 @@
 # How it Works
 
-## Device Lifecycle
+## Project Lifecycle
 
 -> Create a diagram here
 
